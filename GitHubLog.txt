@@ -1,0 +1,934 @@
+2017-02-22 23:58:17.2883|WARN|thread: 1|StandardUserErrors|Showing user error Failed to create a new commit.
+System.ArgumentNullException: Failed Null Check on 'commitModel'
+参数名: commitModel
+   在 GitHub.Helpers.Ensure.ArgumentNotNull(Object value, String name)
+   在 GitHub.ViewModels.CommitViewModel..ctor(IRepositoryModel repository, ICommitModel commitModel, ICommittedFileForklift committedFileForklift, IAvatarProvider avatarProvider, IInlineTextProvider inlineTextProvider)
+   在 GitHub.Helpers.CommitCreator.<>c__DisplayClass2.<CreateCommit>b__1(<>f__AnonymousType0`2 x)
+   在 System.Reactive.Linq.ObservableImpl.Select`2._.OnNext(TSource value)
+2017-02-22 23:48:46.6545|INFO|thread: 1|CommandLineHandler|Parsing command line arguments:
+2017-02-22 23:48:46.6750|INFO|thread: 1|CommandLineHandler|Unprocessed args: 
+2017-02-22 23:48:46.6750|INFO|thread: 1|AppInstance|Starting up as master instance of GitHub Desktop
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| #########################################
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| GitHub Desktop started. VERSION: 3.3.4.0
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| Build version: 50415dfc92210fcda6c1e5a82b0e4aec7c60bec6
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| ***************************************
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| ***                                 ***
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| ***                                 ***
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| ***        Have a problem?          ***
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| ***    Email support@github.com     ***
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| ***      and include this file      ***
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| ***                                 ***
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| ***                                 ***
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| ***************************************
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| OS Version: Windows 10 10.0.14393.0 amd64
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| CLR Version: 4.0.30319.42000
+2017-02-22 23:48:46.7185|INFO|thread: 4|StartupLogging| Current culture: zh-CN
+2017-02-22 23:48:46.7195|INFO|thread: 4|StartupLogging| Environment.CurrentDirectory: C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14
+2017-02-22 23:48:46.7195|INFO|thread: 4|StartupLogging| currentProcess.StartInfo.WorkingDirectory: 
+2017-02-22 23:48:46.7195|INFO|thread: 4|StartupLogging| Terminal Services session: no
+2017-02-22 23:48:46.7195|INFO|thread: 4|StartupLogging| Location: C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14\GitHub.exe
+2017-02-22 23:48:46.7195|INFO|thread: 4|StartupLogging| ActivationUri: https://github-windows.s3.amazonaws.com/GitHub.application
+2017-02-22 23:48:46.7195|INFO|thread: 4|StartupLogging| System.Environment.CommandLine: C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14\GitHub.exe
+2017-02-22 23:48:46.7355|INFO|thread: 1|HardwareRenderingHelper|Your video card appears to support hardware rendering. If this isn't the case and you see glitches
+2017-02-22 23:48:46.7355|INFO|thread: 1|HardwareRenderingHelper|set the GH_FORCE_SW_RENDERING environment variable to 1
+2017-02-22 23:48:46.7666|INFO|thread: 4|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:48:46.7666|INFO|thread: 4|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14\NativeBinaries\x86;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;%QUARTUS_ROOTDIR%\bin;K:\Git\cmd;C:\Users\ASUS\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\ASUS\AppData\Local\Programs\Python\Python35\;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:48:46.7666|INFO|thread: 4|StartupLogging| =====================================================
+2017-02-22 23:48:46.7666|INFO|thread: 4|StartupLogging|  DIAGNOSTICS                                        |
+2017-02-22 23:48:46.7666|INFO|thread: 4|StartupLogging| =====================================================
+2017-02-22 23:48:46.7666|INFO|thread: 4|StartupLogging| Git Extracted: 'True:
+2017-02-22 23:48:46.7666|INFO|thread: 4|StartupLogging| PortableGit Dir Exists: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db'
+2017-02-22 23:48:46.7666|INFO|thread: 4|StartupLogging| Git Executable Exists: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe'
+2017-02-22 23:48:46.7666|ERROR|thread: 4|StartupLogging| MISSING PATH!!: 'C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14\NativeBinaries\x86'
+2017-02-22 23:48:46.7836|ERROR|thread: 4|StartupLogging| MISSING PATH!!: '%QUARTUS_ROOTDIR%\bin'
+2017-02-22 23:48:46.7836|INFO|thread: 4|StartupLogging| ----------------------------------------------------
+2017-02-22 23:48:46.7836|INFO|thread: 4|StartupLogging| PATH: C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14\NativeBinaries\x86;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64;%QUARTUS_ROOTDIR%\bin;K:\Git\cmd;C:\Users\ASUS\AppData\Local\Programs\Python\Python35\Scripts\;C:\Users\ASUS\AppData\Local\Programs\Python\Python35\;C:\Users\ASUS\AppData\Local\Microsoft\WindowsApps;
+2017-02-22 23:48:46.7836|INFO|thread: 1|App|Checking whether application is network deployed: True
+2017-02-22 23:48:46.7836|INFO|thread: 1|App|Shortcut C:\Users\ASUS\AppData\Local\GitHub\GitHub.appref-ms exists? True
+2017-02-22 23:48:46.8246|INFO|thread: 4|StartupLogger|Proxy information: (None)
+2017-02-22 23:48:46.8246|INFO|thread: 4|StartupLogger|Couldn't fetch creds for proxy
+2017-02-22 23:48:46.9367|INFO|thread: 1|ClickOnceAppIconHelper|Updating registry with our application icon 'C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14\Images\App.ico'
+2017-02-22 23:48:47.5071|INFO|thread: 4|PortablePackageManager|Already extracted PortableGit.7z, returning 100%
+2017-02-22 23:48:47.6037|INFO|thread: 4|MsysGitCertificateInstaller|Found certificate cache, loaded 156 certificates
+2017-02-22 23:48:47.6037|INFO|thread: 4|MsysGitCertificateInstaller|Created certificate bundle with 189 entries
+2017-02-22 23:48:47.6843|INFO|thread: 4|StartupSequence|Took 698ms to Update certificate bundle from system store
+2017-02-22 23:48:48.6460|INFO|thread: 1|CommandLineToolsExtractor|Portable Git and Git LFS are already extracted
+2017-02-22 23:48:48.6460|INFO|thread: 1|GitClient|Installing git lfs filters
+2017-02-22 23:48:48.6610|INFO|thread: 1|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:48:48.6610|INFO|thread: 1|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:48:48.6770|INFO|thread: 1|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'lfs install --force ', Working Directory: C:\Users\ASUS\AppData\Local\Temp\
+2017-02-22 23:48:48.6971|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.ShellViewModel.
+2017-02-22 23:48:48.6971|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.DashboardViewModel.
+2017-02-22 23:48:50.2990|INFO|thread: 1|PortablePackageManager|Already extracted gitignore.7z, returning 100%
+2017-02-22 23:48:51.0251|WARN|thread: 9|LoginCache|Could not get login for host 'GitHub.HostAddress'
+System.Collections.Generic.KeyNotFoundException: The given key 'login:null' was not present in the cache.
+2017-02-22 23:48:53.0392|INFO|thread: 1|RepositoryHost|Log in from cache for login 'feihu-jun' to host 'https://api.github.com/' SUCCEEDED
+2017-02-22 23:48:53.0782|INFO|thread:25|ApplicationShellInitializer|Running post login tasks. ~/.gitconfig is set up with user.name = 'wen' and user.email = '410401925@qq.com'
+2017-02-22 23:48:53.0882|INFO|thread:25|SshKeyHelper|Found existing SSH key pair
+2017-02-22 23:48:54.3387|INFO|thread: 5|ApiClient|About to add SSH Key: GitHub Desktop - ASUS-PC - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDD1mHkh1xhVLz4ckgo0WxSuQwdC1RX3qhM5kz8EukIkL2LwfCdAYwWk8DsmtITDpXyNAhX6bpI9Otw4crzWlpbGpdo8BruehC3O4rN8HpUCmSOkYLbMnAku1qnW42OadnWrQaqn+XkoKdtLByPAUwgVxlhCBKzsPuUJUhrfL2EdXHLGpDDoYNd5NLtXEEf//8ZX1u9cOJYDv4lux68+Yyf1l09cmf2/s2quNuM0VI1wCEIsqjZ023GZLNAlaOcYhIMNXkB0/04PsT3aKFgUuhDzZ0mK09PFp493btwq3zJwS50vtKJVzykdBNesUZeczeI2yucTaUs1A7RTpSSrvyt ASUS@ASUS-PC
+
+2017-02-22 23:48:54.4383|INFO|thread:14|DashboardViewModel|Selected repository 'feihu-jun/mypathon'
+2017-02-22 23:48:54.4793|INFO|thread:14|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 1 at GitClient.cs:605
+2017-02-22 23:48:54.4793|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 1 at GitClient.cs:605 after waiting 0.0026913s
+2017-02-22 23:48:54.4863|INFO|thread:14|AsyncReaderWriterLock|Acquiring exclusive scheduler for operation 2 at GitClient.cs:583
+2017-02-22 23:48:54.5294|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 1 at GitClient.cs:605 after blocking 0.0472826s
+2017-02-22 23:48:54.5294|INFO|thread:16|AsyncReaderWriterLock|Acquired exclusive scheduler for operation: 2 at GitClient.cs:583 after waiting 0.0447788s
+2017-02-22 23:48:55.3870|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 3 at GitClient.cs:600
+2017-02-22 23:48:55.5956|INFO|thread:16|DashboardViewModel|Took 1127ms to Create RepositoryViewModel for location C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:48:55.5956|INFO|thread:16|AsyncReaderWriterLock|Released exclusive scheduler for operation: 2 at GitClient.cs:583 after blocking 1.065505s
+2017-02-22 23:48:55.5956|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 3 at GitClient.cs:600 after waiting 0.2101154s
+2017-02-22 23:48:55.6799|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 4 at RepositoryViewModel.cs:319
+2017-02-22 23:48:55.6799|INFO|thread:10|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 4 at RepositoryViewModel.cs:319 after waiting 0.0015655s
+2017-02-22 23:48:55.6799|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 3 at GitClient.cs:600 after blocking 0.0854421s
+2017-02-22 23:48:55.7804|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 4 at RepositoryViewModel.cs:319 after blocking 0.098307s
+2017-02-22 23:48:55.8825|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 5 at GitClient.cs:195
+2017-02-22 23:48:55.8825|INFO|thread: 4|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 5 at GitClient.cs:195 after waiting 0.0004322s
+2017-02-22 23:48:55.8825|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 6 at RepositoryModel.cs:596
+2017-02-22 23:48:55.9155|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 7 at RepositoryModel.cs:596
+2017-02-22 23:48:55.9155|INFO|thread:10|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 6 at RepositoryModel.cs:596 after waiting 0.0330819s
+2017-02-22 23:48:55.9366|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 7 at RepositoryModel.cs:596 after waiting 0.021904s
+2017-02-22 23:48:55.9406|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 5 at GitClient.cs:195 after blocking 0.0584147s
+2017-02-22 23:48:55.9566|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 8 at NewPullRequestViewModel.cs:245
+2017-02-22 23:48:55.9566|INFO|thread: 4|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 9 at GitClient.cs:267
+2017-02-22 23:48:55.9566|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 7 at RepositoryModel.cs:596 after blocking 0.0239883s
+2017-02-22 23:48:55.9566|INFO|thread: 4|AsyncReaderWriterLock|Released concurrent scheduler for operation: 6 at RepositoryModel.cs:596 after blocking 0.0448925s
+2017-02-22 23:48:55.9566|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 9 at GitClient.cs:267 after waiting 0.0008814s
+2017-02-22 23:48:55.9566|INFO|thread:10|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 8 at NewPullRequestViewModel.cs:245 after waiting 0.0058188s
+2017-02-22 23:48:55.9696|INFO|thread: 5|SshKeyHelper|ssh-agent already running
+2017-02-22 23:48:55.9696|INFO|thread: 5|PortablePackageManager|Already extracted lfs-amd64.7z, returning 100%
+2017-02-22 23:48:55.9696|INFO|thread: 4|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:48:55.9696|INFO|thread: 4|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:48:55.9696|INFO|thread: 4|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:48:56.0056|INFO|thread: 5|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:48:56.0056|INFO|thread: 5|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:48:56.0166|INFO|thread: 5|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin\ssh-add.exe', Args: '"C:\Users\ASUS\.ssh\github_rsa"', Working Directory: C:\Users\ASUS\AppData\Local\Temp\
+2017-02-22 23:48:56.1837|INFO|thread: 4|ConcurrentRepositoryConnection|Took 155ms to git status
+2017-02-22 23:48:56.1837|INFO|thread: 4|ConcurrentRepositoryConnection|Took 156ms to git status and parse output
+2017-02-22 23:48:56.5129|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 10 at GitClient.cs:588
+2017-02-22 23:48:57.4186|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 11 at BranchesViewModel.cs:356
+2017-02-22 23:48:57.4226|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 12 at RepositoryViewModel.cs:319
+2017-02-22 23:48:57.7842|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 10 at GitClient.cs:588 after waiting 1.2707497s
+2017-02-22 23:48:57.7842|INFO|thread: 4|NewCommitViewModel|Took 1824ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:48:57.7842|INFO|thread: 4|AsyncReaderWriterLock|Released concurrent scheduler for operation: 9 at GitClient.cs:267 after blocking 1.8236324s
+2017-02-22 23:48:57.7842|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 11 at BranchesViewModel.cs:356 after waiting 0.365962s
+2017-02-22 23:48:57.7842|INFO|thread: 4|BackgroundFetcher|Got a refresh period for C:\Users\ASUS\Desktop\Python\mypathon\.git of 300 seconds
+2017-02-22 23:48:57.7842|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 10 at GitClient.cs:588 after blocking 0.0055859s
+2017-02-22 23:48:57.7842|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 12 at RepositoryViewModel.cs:319 after waiting 0.3672355s
+2017-02-22 23:48:57.7842|INFO|thread: 4|BackgroundFetcher|Added a delay for C:\Users\ASUS\Desktop\Python\mypathon\.git of 3327 milliseconds
+2017-02-22 23:48:57.8092|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 13 at GitClient.cs:600
+2017-02-22 23:48:57.8092|INFO|thread: 1|NewCommitViewModel|Took 25ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:48:57.8132|INFO|thread: 1|AsyncReaderWriterLock|Released concurrent scheduler for operation: 12 at RepositoryViewModel.cs:319 after blocking 0.0231976s
+2017-02-22 23:48:57.8132|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 13 at GitClient.cs:600 after waiting 0.004106s
+2017-02-22 23:48:57.8132|INFO|thread: 9|AsyncReaderWriterLock|Released concurrent scheduler for operation: 11 at BranchesViewModel.cs:356 after blocking 0.0282495s
+2017-02-22 23:48:57.8132|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 14 at RepositoryViewModel.cs:319
+2017-02-22 23:48:57.8132|INFO|thread: 9|SoftwareUpdateViewModel|Checking for new version
+2017-02-22 23:48:57.8522|INFO|thread: 1|NewPullRequestViewModel|No matching pull request found, clearing selection...
+2017-02-22 23:48:57.8612|INFO|thread: 9|AsyncReaderWriterLock|Released concurrent scheduler for operation: 13 at GitClient.cs:600 after blocking 0.0476114s
+2017-02-22 23:48:57.8612|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 14 at RepositoryViewModel.cs:319 after waiting 0.0472372s
+2017-02-22 23:48:57.8612|INFO|thread: 1|AsyncReaderWriterLock|Released concurrent scheduler for operation: 14 at RepositoryViewModel.cs:319 after blocking 0.0001488s
+2017-02-22 23:48:57.8612|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 15 at RepositoryViewModel.cs:319
+2017-02-22 23:48:57.8612|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 8 at NewPullRequestViewModel.cs:245 after blocking 1.9052964s
+2017-02-22 23:48:57.8612|INFO|thread:10|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 15 at RepositoryViewModel.cs:319 after waiting 0.0066738s
+2017-02-22 23:48:57.9743|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 15 at RepositoryViewModel.cs:319 after blocking 0.1060455s
+2017-02-22 23:48:59.4226|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 16 at GitClient.cs:381
+2017-02-22 23:48:59.4226|INFO|thread:10|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 16 at GitClient.cs:381 after waiting 0.0001117s
+2017-02-22 23:48:59.4476|INFO|thread:16|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:48:59.4476|INFO|thread:16|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:48:59.4476|INFO|thread:16|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 4b825dc642cb6eb9a060e54bf8d69288fbee4904 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:48:59.5767|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 17 at ICommittedFileForklift.cs:95
+2017-02-22 23:48:59.5767|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 17 at ICommittedFileForklift.cs:95 after waiting 0.0017356s
+2017-02-22 23:48:59.6257|INFO|thread: 9|AsyncReaderWriterLock|Released concurrent scheduler for operation: 17 at ICommittedFileForklift.cs:95 after blocking 0.0473955s
+2017-02-22 23:48:59.6713|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 16 at GitClient.cs:381 after blocking 0.2482843s
+2017-02-22 23:49:00.7758|INFO|thread: 1|SelectedCommitViewModel|Took 1368ms to load files for commit b12d8d2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:49:00.7888|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 18 at GitClient.cs:474
+2017-02-22 23:49:00.7888|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 18 at GitClient.cs:474 after waiting 0.00015s
+2017-02-22 23:49:00.8488|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 18 at GitClient.cs:474 after blocking 0.0599478s
+2017-02-22 23:49:07.4881|INFO|thread: 1|ReactiveScreen|Activating GitHub.ViewModels.OptionsViewModel.
+2017-02-22 23:50:31.0305|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 19 at GitClient.cs:195
+2017-02-22 23:50:31.0305|INFO|thread: 4|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 19 at GitClient.cs:195 after waiting 4.89E-05s
+2017-02-22 23:50:31.0305|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 20 at RepositoryModel.cs:596
+2017-02-22 23:50:31.0305|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 20 at RepositoryModel.cs:596 after waiting 0.0007855s
+2017-02-22 23:50:31.0435|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 21 at GitClient.cs:267
+2017-02-22 23:50:31.0435|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 20 at RepositoryModel.cs:596 after blocking 0.0121508s
+2017-02-22 23:50:31.0435|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 21 at GitClient.cs:267 after waiting 0.000144s
+2017-02-22 23:50:31.0435|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 19 at GitClient.cs:195 after blocking 0.0161061s
+2017-02-22 23:50:31.0590|INFO|thread:16|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:50:31.0590|INFO|thread:16|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:50:31.0590|INFO|thread:16|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:50:31.1817|INFO|thread:32|ConcurrentRepositoryConnection|Took 92ms to git status
+2017-02-22 23:50:31.1817|INFO|thread:32|ConcurrentRepositoryConnection|Took 92ms to git status and parse output
+2017-02-22 23:50:31.1817|INFO|thread:32|NewCommitViewModel|Took 138ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:50:31.1817|INFO|thread:32|AsyncReaderWriterLock|Released concurrent scheduler for operation: 21 at GitClient.cs:267 after blocking 0.1382586s
+2017-02-22 23:50:31.1817|INFO|thread: 1|NewCommitViewModel|Took 0ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:50:31.1817|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 22 at RepositoryViewModel.cs:319
+2017-02-22 23:50:31.1817|INFO|thread: 4|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 22 at RepositoryViewModel.cs:319 after waiting 2.6E-05s
+2017-02-22 23:50:31.1938|INFO|thread:31|AsyncReaderWriterLock|Released concurrent scheduler for operation: 22 at RepositoryViewModel.cs:319 after blocking 0.0102655s
+2017-02-22 23:50:52.6086|INFO|thread: 5|GitConfig|Saving global git configuration for user.name and user.email
+2017-02-22 23:50:52.6196|INFO|thread: 1|ReactiveScreen|Deactivating GitHub.ViewModels.OptionsViewModel.
+2017-02-22 23:50:52.6196|INFO|thread: 1|ReactiveScreen|Closed GitHub.ViewModels.OptionsViewModel.
+2017-02-22 23:50:55.3583|INFO|thread:14|DashboardViewModel|Selected repository 'feihu-jun/Tutorial'
+2017-02-22 23:50:55.3583|INFO|thread:14|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 23 at GitClient.cs:605
+2017-02-22 23:50:55.3583|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 23 at GitClient.cs:605 after waiting 8.4E-05s
+2017-02-22 23:50:55.3583|INFO|thread:14|AsyncReaderWriterLock|Acquiring exclusive scheduler for operation 24 at GitClient.cs:583
+2017-02-22 23:50:55.3643|INFO|thread:35|AsyncReaderWriterLock|Released concurrent scheduler for operation: 23 at GitClient.cs:605 after blocking 0.0052445s
+2017-02-22 23:50:55.3643|INFO|thread:16|AsyncReaderWriterLock|Acquired exclusive scheduler for operation: 24 at GitClient.cs:583 after waiting 0.0052638s
+2017-02-22 23:50:55.4896|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 25 at GitClient.cs:600
+2017-02-22 23:50:55.5261|INFO|thread:16|DashboardViewModel|Took 166ms to Create RepositoryViewModel for location C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2017-02-22 23:50:55.5261|INFO|thread:16|AsyncReaderWriterLock|Released exclusive scheduler for operation: 24 at GitClient.cs:583 after blocking 0.1610201s
+2017-02-22 23:50:55.5261|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 25 at GitClient.cs:600 after waiting 0.036933s
+2017-02-22 23:50:55.5261|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 26 at RepositoryViewModel.cs:319
+2017-02-22 23:50:55.5261|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 26 at RepositoryViewModel.cs:319 after waiting 3.9E-05s
+2017-02-22 23:50:55.5261|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 25 at GitClient.cs:600 after blocking 0.003915s
+2017-02-22 23:50:55.5371|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 26 at RepositoryViewModel.cs:319 after blocking 0.0069833s
+2017-02-22 23:50:55.5922|INFO|thread:29|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 27 at GitClient.cs:195
+2017-02-22 23:50:55.5922|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 27 at GitClient.cs:195 after waiting 2.88E-05s
+2017-02-22 23:50:55.5922|INFO|thread:29|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 28 at RepositoryModel.cs:596
+2017-02-22 23:50:55.5922|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 28 at RepositoryModel.cs:596 after waiting 8.52E-05s
+2017-02-22 23:50:55.5962|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 29 at RepositoryModel.cs:596
+2017-02-22 23:50:55.5962|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 29 at RepositoryModel.cs:596 after waiting 0.0008048s
+2017-02-22 23:50:55.5962|INFO|thread: 4|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 30 at NewPullRequestViewModel.cs:245
+2017-02-22 23:50:55.5962|INFO|thread: 4|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 31 at GitClient.cs:267
+2017-02-22 23:50:55.5962|INFO|thread: 4|AsyncReaderWriterLock|Released concurrent scheduler for operation: 28 at RepositoryModel.cs:596 after blocking 0.0092984s
+2017-02-22 23:50:55.5962|INFO|thread: 5|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 30 at NewPullRequestViewModel.cs:245 after waiting 0.0007184s
+2017-02-22 23:50:55.5962|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 29 at RepositoryModel.cs:596 after blocking 0.0077889s
+2017-02-22 23:50:55.5962|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 31 at GitClient.cs:267 after waiting 0.003686s
+2017-02-22 23:50:55.5962|INFO|thread:32|AsyncReaderWriterLock|Released concurrent scheduler for operation: 27 at GitClient.cs:195 after blocking 0.0140021s
+2017-02-22 23:50:55.6112|INFO|thread: 4|AsyncReaderWriterLock|Released concurrent scheduler for operation: 30 at NewPullRequestViewModel.cs:245 after blocking 0.0091828s
+2017-02-22 23:50:55.6312|INFO|thread:34|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:50:55.6312|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 32 at BranchesViewModel.cs:356
+2017-02-22 23:50:55.6312|INFO|thread:34|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:50:55.6312|INFO|thread:34|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo\
+2017-02-22 23:50:55.6312|INFO|thread:31|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 32 at BranchesViewModel.cs:356 after waiting 2.88E-05s
+2017-02-22 23:50:55.6312|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 33 at RepositoryViewModel.cs:319
+2017-02-22 23:50:55.6312|INFO|thread:39|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 33 at RepositoryViewModel.cs:319 after waiting 2.76E-05s
+2017-02-22 23:50:55.6452|INFO|thread: 4|AsyncReaderWriterLock|Released concurrent scheduler for operation: 32 at BranchesViewModel.cs:356 after blocking 0.0132277s
+2017-02-22 23:50:55.6452|INFO|thread:35|AsyncReaderWriterLock|Released concurrent scheduler for operation: 33 at RepositoryViewModel.cs:319 after blocking 0.0152187s
+2017-02-22 23:50:55.8053|INFO|thread:29|ConcurrentRepositoryConnection|Took 122ms to git status
+2017-02-22 23:50:55.8053|INFO|thread:29|ConcurrentRepositoryConnection|Took 122ms to git status and parse output
+2017-02-22 23:50:55.8053|INFO|thread:29|NewCommitViewModel|Took 204ms to load files for C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2017-02-22 23:50:55.8053|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 31 at GitClient.cs:267 after blocking 0.2007336s
+2017-02-22 23:50:55.9314|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 34 at GitClient.cs:588
+2017-02-22 23:50:55.9314|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 34 at GitClient.cs:588 after waiting 3.27E-05s
+2017-02-22 23:50:55.9314|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 34 at GitClient.cs:588 after blocking 0.003131s
+2017-02-22 23:50:56.2406|INFO|thread: 1|NewCommitViewModel|Took 434ms to render file list for C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2017-02-22 23:50:56.2406|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 35 at RepositoryViewModel.cs:319
+2017-02-22 23:50:56.2406|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 35 at RepositoryViewModel.cs:319 after waiting 3.98E-05s
+2017-02-22 23:50:56.2597|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 35 at RepositoryViewModel.cs:319 after blocking 0.0172272s
+2017-02-22 23:50:56.2597|INFO|thread:14|DashboardViewModel|Selected repository 'feihu-jun/mypathon'
+2017-02-22 23:50:56.2677|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 36 at GitClient.cs:195
+2017-02-22 23:50:56.2677|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 36 at GitClient.cs:195 after waiting 9.47E-05s
+2017-02-22 23:50:56.2677|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 37 at RepositoryModel.cs:596
+2017-02-22 23:50:56.3007|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 37 at RepositoryModel.cs:596 after waiting 0.0324858s
+2017-02-22 23:50:56.3007|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 36 at GitClient.cs:195 after blocking 0.0392067s
+2017-02-22 23:50:56.3007|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 38 at GitClient.cs:267
+2017-02-22 23:50:56.3007|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 37 at RepositoryModel.cs:596 after blocking 0.007978s
+2017-02-22 23:50:56.3007|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 38 at GitClient.cs:267 after waiting 9.15E-05s
+2017-02-22 23:50:56.3217|INFO|thread:36|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:50:56.3217|INFO|thread:36|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:50:56.3217|INFO|thread:36|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:50:56.4698|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 39 at GitClient.cs:588
+2017-02-22 23:50:56.8791|ERROR|thread: 1|WebBrowserExtensions|Unable to resolve PresentationSource for browser
+2017-02-22 23:50:56.9586|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 39 at GitClient.cs:588 after waiting 0.4895549s
+2017-02-22 23:50:56.9586|INFO|thread:36|ConcurrentRepositoryConnection|Took 556ms to git status
+2017-02-22 23:50:56.9586|INFO|thread:36|ConcurrentRepositoryConnection|Took 556ms to git status and parse output
+2017-02-22 23:50:56.9586|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 39 at GitClient.cs:588 after blocking 0.0050956s
+2017-02-22 23:50:56.9586|INFO|thread:36|NewCommitViewModel|Took 655ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:50:56.9586|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 38 at GitClient.cs:267 after blocking 0.6555137s
+2017-02-22 23:50:56.9586|INFO|thread: 1|NewCommitViewModel|Took 0ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:50:56.9586|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 40 at RepositoryViewModel.cs:319
+2017-02-22 23:50:56.9586|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 40 at RepositoryViewModel.cs:319 after waiting 3.07E-05s
+2017-02-22 23:50:56.9786|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 40 at RepositoryViewModel.cs:319 after blocking 0.0119598s
+2017-02-22 23:50:57.0377|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 41 at GitClient.cs:381
+2017-02-22 23:50:57.0377|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 41 at GitClient.cs:381 after waiting 2.92E-05s
+2017-02-22 23:50:57.0492|INFO|thread:33|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:50:57.0492|INFO|thread:33|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:50:57.0492|INFO|thread:33|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 4b825dc642cb6eb9a060e54bf8d69288fbee4904 19ce9d8ff1fccf510df82d99a65f48c649b7becd ', Working Directory: C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo\
+2017-02-22 23:50:57.1658|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 41 at GitClient.cs:381 after blocking 0.1272379s
+2017-02-22 23:50:57.1658|INFO|thread: 1|SelectedCommitViewModel|Took 128ms to load files for commit 01ad915 in repo C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2017-02-22 23:50:57.2886|INFO|thread: 1|NewPullRequestViewModel|No matching pull request found, clearing selection...
+2017-02-22 23:50:57.6745|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 42 at GitClient.cs:600
+2017-02-22 23:50:57.6745|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 42 at GitClient.cs:600 after waiting 4.89E-05s
+2017-02-22 23:50:57.6745|INFO|thread:32|AsyncReaderWriterLock|Released concurrent scheduler for operation: 42 at GitClient.cs:600 after blocking 0.0038558s
+2017-02-22 23:50:57.6745|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 43 at RepositoryViewModel.cs:319
+2017-02-22 23:50:57.6745|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 43 at RepositoryViewModel.cs:319 after waiting 3.9E-05s
+2017-02-22 23:50:57.6745|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 43 at RepositoryViewModel.cs:319 after blocking 0.0094066s
+2017-02-22 23:51:08.9091|INFO|thread: 1|AsyncReaderWriterLock|Acquiring exclusive scheduler for operation 44 at GitClient.cs:457
+2017-02-22 23:51:08.9091|INFO|thread:36|AsyncReaderWriterLock|Acquired exclusive scheduler for operation: 44 at GitClient.cs:457 after waiting 3.78E-05s
+2017-02-22 23:51:08.9091|INFO|thread: 5|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:51:08.9091|INFO|thread: 5|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:51:08.9091|INFO|thread: 5|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'revert b12d8d24f285da9feb3523b6ebe0dcda284cf760 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:51:09.3429|INFO|thread:33|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 45 at RepositoryModel.cs:596
+2017-02-22 23:51:09.3429|INFO|thread:45|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 46 at RepositoryModel.cs:596
+2017-02-22 23:51:09.3429|INFO|thread:33|AsyncReaderWriterLock|Released exclusive scheduler for operation: 44 at GitClient.cs:457 after blocking 0.4352688s
+2017-02-22 23:51:09.3429|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 45 at RepositoryModel.cs:596 after waiting 0.0017644s
+2017-02-22 23:51:09.3429|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 46 at RepositoryModel.cs:596 after waiting 0.0001918s
+2017-02-22 23:51:09.3449|INFO|thread:46|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 47 at GitClient.cs:267
+2017-02-22 23:51:09.3449|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 47 at GitClient.cs:267 after waiting 0.0007575s
+2017-02-22 23:51:09.3449|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 48 at NewPullRequestViewModel.cs:245
+2017-02-22 23:51:09.3449|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 49 at BranchesViewModel.cs:356
+2017-02-22 23:51:09.3449|INFO|thread: 4|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 48 at NewPullRequestViewModel.cs:245 after waiting 4.1E-05s
+2017-02-22 23:51:09.3449|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 45 at RepositoryModel.cs:596 after blocking 0.0081063s
+2017-02-22 23:51:09.3449|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 49 at BranchesViewModel.cs:356 after waiting 0.000195s
+2017-02-22 23:51:09.3449|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 50 at RepositoryViewModel.cs:319
+2017-02-22 23:51:09.3708|INFO|thread:29|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:51:09.3708|INFO|thread:29|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:51:09.3708|INFO|thread:29|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:51:09.3708|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 46 at RepositoryModel.cs:596 after blocking 0.0303357s
+2017-02-22 23:51:09.3708|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 50 at RepositoryViewModel.cs:319 after waiting 0.0221275s
+2017-02-22 23:51:09.3781|INFO|thread:31|AsyncReaderWriterLock|Released concurrent scheduler for operation: 48 at NewPullRequestViewModel.cs:245 after blocking 0.0256091s
+2017-02-22 23:51:09.3781|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 49 at BranchesViewModel.cs:356 after blocking 0.03151s
+2017-02-22 23:51:09.3911|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 50 at RepositoryViewModel.cs:319 after blocking 0.0154982s
+2017-02-22 23:51:09.4391|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 51 at ICommittedFileForklift.cs:95
+2017-02-22 23:51:09.4391|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 51 at ICommittedFileForklift.cs:95 after waiting 4.5E-05s
+2017-02-22 23:51:09.4391|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 51 at ICommittedFileForklift.cs:95 after blocking 0.0061279s
+2017-02-22 23:51:09.5412|INFO|thread:31|ConcurrentRepositoryConnection|Took 126ms to git status
+2017-02-22 23:51:09.5412|INFO|thread:31|ConcurrentRepositoryConnection|Took 126ms to git status and parse output
+2017-02-22 23:51:09.5492|INFO|thread:31|NewCommitViewModel|Took 204ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:51:09.5492|INFO|thread:31|AsyncReaderWriterLock|Released concurrent scheduler for operation: 47 at GitClient.cs:267 after blocking 0.2038177s
+2017-02-22 23:51:09.5492|INFO|thread: 1|NewCommitViewModel|Took 0ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:51:15.8044|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 52 at GitClient.cs:474
+2017-02-22 23:51:15.8044|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 52 at GitClient.cs:474 after waiting 3.31E-05s
+2017-02-22 23:51:15.8134|INFO|thread:31|AsyncReaderWriterLock|Released concurrent scheduler for operation: 52 at GitClient.cs:474 after blocking 0.0086601s
+2017-02-22 23:51:16.8570|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 53 at GitClient.cs:381
+2017-02-22 23:51:16.8570|INFO|thread:31|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 53 at GitClient.cs:381 after waiting 3.11E-05s
+2017-02-22 23:51:16.8750|INFO|thread:33|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:51:16.8750|INFO|thread:33|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:51:16.8750|INFO|thread:33|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 4b825dc642cb6eb9a060e54bf8d69288fbee4904 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:51:17.0066|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 53 at GitClient.cs:381 after blocking 0.150117s
+2017-02-22 23:51:17.0197|INFO|thread: 1|SelectedCommitViewModel|Took 164ms to load files for commit 56f65b2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:51:17.0197|INFO|thread:32|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 54 at GitClient.cs:474
+2017-02-22 23:51:17.0197|INFO|thread:31|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 54 at GitClient.cs:474 after waiting 2.8E-05s
+2017-02-22 23:51:17.0197|INFO|thread:39|AsyncReaderWriterLock|Released concurrent scheduler for operation: 54 at GitClient.cs:474 after blocking 0.0091974s
+2017-02-22 23:51:19.0782|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 55 at GitClient.cs:381
+2017-02-22 23:51:19.0782|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 55 at GitClient.cs:381 after waiting 5.32E-05s
+2017-02-22 23:51:19.0952|INFO|thread:33|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:51:19.0952|INFO|thread:33|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:51:19.0952|INFO|thread:33|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 4b825dc642cb6eb9a060e54bf8d69288fbee4904 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:51:19.2189|INFO|thread:39|AsyncReaderWriterLock|Released concurrent scheduler for operation: 55 at GitClient.cs:381 after blocking 0.1408797s
+2017-02-22 23:51:19.2390|INFO|thread: 1|SelectedCommitViewModel|Took 161ms to load files for commit b12d8d2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:51:19.2390|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 56 at GitClient.cs:474
+2017-02-22 23:51:19.2390|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 56 at GitClient.cs:474 after waiting 3.31E-05s
+2017-02-22 23:51:19.2390|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 56 at GitClient.cs:474 after blocking 0.0089065s
+2017-02-22 23:51:22.8945|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 57 at GitClient.cs:381
+2017-02-22 23:51:22.8945|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 57 at GitClient.cs:381 after waiting 3.27E-05s
+2017-02-22 23:51:22.8945|INFO|thread:29|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:51:22.9075|INFO|thread:29|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:51:22.9075|INFO|thread:29|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 4b825dc642cb6eb9a060e54bf8d69288fbee4904 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:51:23.0456|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 57 at GitClient.cs:381 after blocking 0.1505488s
+2017-02-22 23:51:23.0646|INFO|thread: 1|SelectedCommitViewModel|Took 170ms to load files for commit 56f65b2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:51:23.0646|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 58 at GitClient.cs:474
+2017-02-22 23:51:23.0646|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 58 at GitClient.cs:474 after waiting 2.6E-05s
+2017-02-22 23:51:23.0646|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 58 at GitClient.cs:474 after blocking 0.0072249s
+2017-02-22 23:51:24.8706|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 59 at GitClient.cs:381
+2017-02-22 23:51:24.8706|INFO|thread:39|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 59 at GitClient.cs:381 after waiting 4.1E-05s
+2017-02-22 23:51:24.8841|INFO|thread:32|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:51:24.8841|INFO|thread:32|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:51:24.8841|INFO|thread:32|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 4b825dc642cb6eb9a060e54bf8d69288fbee4904 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:51:25.0101|INFO|thread:32|AsyncReaderWriterLock|Released concurrent scheduler for operation: 59 at GitClient.cs:381 after blocking 0.1394862s
+2017-02-22 23:51:25.0351|INFO|thread: 1|SelectedCommitViewModel|Took 165ms to load files for commit b12d8d2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:51:25.0351|INFO|thread:29|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 60 at GitClient.cs:474
+2017-02-22 23:51:25.0351|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 60 at GitClient.cs:474 after waiting 2.68E-05s
+2017-02-22 23:51:25.0351|INFO|thread:29|AsyncReaderWriterLock|Released concurrent scheduler for operation: 60 at GitClient.cs:474 after blocking 0.0065396s
+2017-02-22 23:51:26.1662|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 61 at GitClient.cs:381
+2017-02-22 23:51:26.1662|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 61 at GitClient.cs:381 after waiting 3.39E-05s
+2017-02-22 23:51:26.1787|INFO|thread:39|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:51:26.1787|INFO|thread:39|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:51:26.1787|INFO|thread:39|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 4b825dc642cb6eb9a060e54bf8d69288fbee4904 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:51:26.3028|INFO|thread:32|AsyncReaderWriterLock|Released concurrent scheduler for operation: 61 at GitClient.cs:381 after blocking 0.1366031s
+2017-02-22 23:51:26.3278|INFO|thread: 1|SelectedCommitViewModel|Took 161ms to load files for commit 56f65b2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:51:26.3298|INFO|thread:33|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 62 at GitClient.cs:474
+2017-02-22 23:51:26.3298|INFO|thread:29|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 62 at GitClient.cs:474 after waiting 2.84E-05s
+2017-02-22 23:51:26.3298|INFO|thread:39|AsyncReaderWriterLock|Released concurrent scheduler for operation: 62 at GitClient.cs:474 after blocking 0.0092882s
+2017-02-22 23:51:35.5558|INFO|thread: 5|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 63 at BranchSelectionViewModel.cs:191
+2017-02-22 23:51:35.5558|INFO|thread:39|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 63 at BranchSelectionViewModel.cs:191 after waiting 8.8E-05s
+2017-02-22 23:51:35.5778|INFO|thread:31|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:51:35.5778|INFO|thread:31|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:51:35.5778|INFO|thread:31|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'log -g --abbrev-commit --pretty=oneline HEAD -n 2500 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:51:35.8787|INFO|thread:32|AsyncReaderWriterLock|Released concurrent scheduler for operation: 63 at BranchSelectionViewModel.cs:191 after blocking 0.3226489s
+2017-02-22 23:51:40.1609|INFO|thread:29|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 64 at BranchSelectionViewModel.cs:191
+2017-02-22 23:51:40.1609|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 64 at BranchSelectionViewModel.cs:191 after waiting 3E-05s
+2017-02-22 23:51:40.1799|INFO|thread:48|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:51:40.1799|INFO|thread:48|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:51:40.1799|INFO|thread:48|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'log -g --abbrev-commit --pretty=oneline HEAD -n 2500 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:51:40.3250|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 64 at BranchSelectionViewModel.cs:191 after blocking 0.1633853s
+2017-02-22 23:51:43.3313|INFO|thread:48|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 65 at BranchSelectionViewModel.cs:191
+2017-02-22 23:51:43.3313|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 65 at BranchSelectionViewModel.cs:191 after waiting 6.78E-05s
+2017-02-22 23:51:43.3453|INFO|thread:33|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:51:43.3453|INFO|thread:33|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:51:43.3453|INFO|thread:33|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'log -g --abbrev-commit --pretty=oneline HEAD -n 2500 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:51:43.4670|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 65 at BranchSelectionViewModel.cs:191 after blocking 0.136112s
+2017-02-22 23:51:43.4780|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 66 at GitClient.cs:615
+2017-02-22 23:51:43.4780|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 66 at GitClient.cs:615 after waiting 3.35E-05s
+2017-02-22 23:51:43.4780|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 67 at NewPullRequestViewModel.cs:224
+2017-02-22 23:51:43.4780|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 67 at NewPullRequestViewModel.cs:224 after waiting 2.21E-05s
+2017-02-22 23:51:43.4870|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 68 at GitClient.cs:201
+2017-02-22 23:51:43.4870|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 68 at GitClient.cs:201 after waiting 0.0001073s
+2017-02-22 23:51:43.4870|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 67 at NewPullRequestViewModel.cs:224 after blocking 0.0095301s
+2017-02-22 23:51:43.4870|INFO|thread: 5|AsyncReaderWriterLock|Released concurrent scheduler for operation: 66 at GitClient.cs:615 after blocking 0.0118232s
+2017-02-22 23:51:43.4870|INFO|thread:33|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 69 at NewPullRequestViewModel.cs:298
+2017-02-22 23:51:43.4870|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 69 at NewPullRequestViewModel.cs:298 after waiting 8.6E-05s
+2017-02-22 23:51:43.4870|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 68 at GitClient.cs:201 after blocking 0.0118709s
+2017-02-22 23:51:43.5066|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 69 at NewPullRequestViewModel.cs:298 after blocking 0.0079109s
+2017-02-22 23:51:58.3535|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 70 at GitClient.cs:195
+2017-02-22 23:51:58.3535|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 70 at GitClient.cs:195 after waiting 4.22E-05s
+2017-02-22 23:51:58.3535|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 71 at RepositoryModel.cs:596
+2017-02-22 23:51:58.3535|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 71 at RepositoryModel.cs:596 after waiting 0.0001772s
+2017-02-22 23:51:58.3716|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 70 at GitClient.cs:195 after blocking 0.0185306s
+2017-02-22 23:51:58.3826|INFO|thread:33|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 72 at GitClient.cs:267
+2017-02-22 23:51:58.3826|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 72 at GitClient.cs:267 after waiting 3.98E-05s
+2017-02-22 23:51:58.3826|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 71 at RepositoryModel.cs:596 after blocking 0.0285992s
+2017-02-22 23:51:58.3946|INFO|thread:16|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:51:58.3946|INFO|thread:16|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:51:58.3946|INFO|thread:16|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:51:58.5582|INFO|thread:16|ConcurrentRepositoryConnection|Took 108ms to git status
+2017-02-22 23:51:58.5582|INFO|thread:16|ConcurrentRepositoryConnection|Took 108ms to git status and parse output
+2017-02-22 23:51:58.5582|INFO|thread:16|NewCommitViewModel|Took 176ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:51:58.5582|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 72 at GitClient.cs:267 after blocking 0.1760273s
+2017-02-22 23:51:58.5582|INFO|thread: 1|NewCommitViewModel|Took 0ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:51:58.5582|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 73 at RepositoryViewModel.cs:319
+2017-02-22 23:51:58.5582|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 73 at RepositoryViewModel.cs:319 after waiting 2.28E-05s
+2017-02-22 23:51:58.5732|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 73 at RepositoryViewModel.cs:319 after blocking 0.0131108s
+2017-02-22 23:52:15.1341|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 74 at GitClient.cs:195
+2017-02-22 23:52:15.1341|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 74 at GitClient.cs:195 after waiting 4.1E-05s
+2017-02-22 23:52:15.1341|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 75 at RepositoryModel.cs:596
+2017-02-22 23:52:15.1341|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 75 at RepositoryModel.cs:596 after waiting 0.0006915s
+2017-02-22 23:52:15.1521|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 74 at GitClient.cs:195 after blocking 0.0183506s
+2017-02-22 23:52:15.1521|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 76 at GitClient.cs:267
+2017-02-22 23:52:15.1521|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 76 at GitClient.cs:267 after waiting 4.5E-05s
+2017-02-22 23:52:15.1521|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 75 at RepositoryModel.cs:596 after blocking 0.0208082s
+2017-02-22 23:52:15.1661|INFO|thread:16|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:52:15.1661|INFO|thread:16|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:52:15.1661|INFO|thread:16|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:52:15.3012|INFO|thread:36|ConcurrentRepositoryConnection|Took 102ms to git status
+2017-02-22 23:52:15.3012|INFO|thread:36|ConcurrentRepositoryConnection|Took 102ms to git status and parse output
+2017-02-22 23:52:15.3012|INFO|thread:36|NewCommitViewModel|Took 146ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:52:15.3012|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 76 at GitClient.cs:267 after blocking 0.1459205s
+2017-02-22 23:52:15.3012|INFO|thread: 1|NewCommitViewModel|Took 4ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:52:15.3012|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 77 at RepositoryViewModel.cs:319
+2017-02-22 23:52:15.3012|INFO|thread:52|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 77 at RepositoryViewModel.cs:319 after waiting 3.59E-05s
+2017-02-22 23:52:15.3202|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 77 at RepositoryViewModel.cs:319 after blocking 0.0126257s
+2017-02-22 23:53:27.4195|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 78 at GitClient.cs:195
+2017-02-22 23:53:27.4195|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 78 at GitClient.cs:195 after waiting 5.28E-05s
+2017-02-22 23:53:27.4195|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 79 at RepositoryModel.cs:596
+2017-02-22 23:53:27.4195|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 79 at RepositoryModel.cs:596 after waiting 2.28E-05s
+2017-02-22 23:53:27.4285|INFO|thread:16|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 80 at GitClient.cs:267
+2017-02-22 23:53:27.4285|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 80 at GitClient.cs:267 after waiting 3.35E-05s
+2017-02-22 23:53:27.4285|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 79 at RepositoryModel.cs:596 after blocking 0.0089203s
+2017-02-22 23:53:27.4285|INFO|thread:52|AsyncReaderWriterLock|Released concurrent scheduler for operation: 78 at GitClient.cs:195 after blocking 0.0156241s
+2017-02-22 23:53:27.4390|INFO|thread:36|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:53:27.4390|INFO|thread:36|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:53:27.4390|INFO|thread:36|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:53:27.5721|INFO|thread:52|ConcurrentRepositoryConnection|Took 100ms to git status
+2017-02-22 23:53:27.5721|INFO|thread:52|ConcurrentRepositoryConnection|Took 100ms to git status and parse output
+2017-02-22 23:53:27.5721|INFO|thread:52|NewCommitViewModel|Took 143ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:53:27.5721|INFO|thread:52|AsyncReaderWriterLock|Released concurrent scheduler for operation: 80 at GitClient.cs:267 after blocking 0.1438801s
+2017-02-22 23:53:27.5721|INFO|thread: 1|NewCommitViewModel|Took 0ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:53:27.5721|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 81 at RepositoryViewModel.cs:319
+2017-02-22 23:53:27.5721|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 81 at RepositoryViewModel.cs:319 after waiting 2.25E-05s
+2017-02-22 23:53:27.6031|INFO|thread:35|AsyncReaderWriterLock|Released concurrent scheduler for operation: 81 at RepositoryViewModel.cs:319 after blocking 0.0303594s
+2017-02-22 23:53:42.8697|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 82 at GitClient.cs:195
+2017-02-22 23:53:42.8697|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 82 at GitClient.cs:195 after waiting 4.5E-05s
+2017-02-22 23:53:42.8697|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 83 at RepositoryModel.cs:596
+2017-02-22 23:53:42.8767|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 83 at RepositoryModel.cs:596 after waiting 0.0062131s
+2017-02-22 23:53:42.8767|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 82 at GitClient.cs:195 after blocking 0.0179369s
+2017-02-22 23:53:42.8998|INFO|thread:52|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 84 at GitClient.cs:267
+2017-02-22 23:53:42.8998|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 84 at GitClient.cs:267 after waiting 3.9E-05s
+2017-02-22 23:53:42.8998|INFO|thread:52|AsyncReaderWriterLock|Released concurrent scheduler for operation: 83 at RepositoryModel.cs:596 after blocking 0.0227922s
+2017-02-22 23:53:42.9118|INFO|thread:16|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:53:42.9118|INFO|thread:16|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:53:42.9118|INFO|thread:16|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:53:43.0719|INFO|thread:52|ConcurrentRepositoryConnection|Took 119ms to git status
+2017-02-22 23:53:43.0719|INFO|thread:52|ConcurrentRepositoryConnection|Took 119ms to git status and parse output
+2017-02-22 23:53:43.0719|INFO|thread:52|NewCommitViewModel|Took 177ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:53:43.0719|INFO|thread:52|AsyncReaderWriterLock|Released concurrent scheduler for operation: 84 at GitClient.cs:267 after blocking 0.1770279s
+2017-02-22 23:53:43.0719|INFO|thread: 1|NewCommitViewModel|Took 0ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:53:43.0719|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 85 at RepositoryViewModel.cs:319
+2017-02-22 23:53:43.0719|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 85 at RepositoryViewModel.cs:319 after waiting 0.0001428s
+2017-02-22 23:53:43.0939|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 85 at RepositoryViewModel.cs:319 after blocking 0.01506s
+2017-02-22 23:53:56.8269|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 86 at GitClient.cs:195
+2017-02-22 23:53:56.8269|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 86 at GitClient.cs:195 after waiting 4.69E-05s
+2017-02-22 23:53:56.8269|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 87 at RepositoryModel.cs:596
+2017-02-22 23:53:56.8269|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 87 at RepositoryModel.cs:596 after waiting 2.28E-05s
+2017-02-22 23:53:56.8359|INFO|thread:52|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 88 at GitClient.cs:267
+2017-02-22 23:53:56.8359|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 88 at GitClient.cs:267 after waiting 5.17E-05s
+2017-02-22 23:53:56.8359|INFO|thread:52|AsyncReaderWriterLock|Released concurrent scheduler for operation: 87 at RepositoryModel.cs:596 after blocking 0.0087043s
+2017-02-22 23:53:56.8359|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 86 at GitClient.cs:195 after blocking 0.0162857s
+2017-02-22 23:53:56.8479|INFO|thread:51|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:53:56.8479|INFO|thread:51|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:53:56.8479|INFO|thread:51|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:53:56.9780|INFO|thread:36|ConcurrentRepositoryConnection|Took 97ms to git status
+2017-02-22 23:53:56.9780|INFO|thread:36|ConcurrentRepositoryConnection|Took 97ms to git status and parse output
+2017-02-22 23:53:56.9780|INFO|thread:36|NewCommitViewModel|Took 142ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:53:56.9780|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 88 at GitClient.cs:267 after blocking 0.142579s
+2017-02-22 23:53:56.9780|INFO|thread: 1|NewCommitViewModel|Took 0ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:53:56.9780|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 89 at RepositoryViewModel.cs:319
+2017-02-22 23:53:56.9780|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 89 at RepositoryViewModel.cs:319 after waiting 4.81E-05s
+2017-02-22 23:53:56.9910|INFO|thread:16|AsyncReaderWriterLock|Released concurrent scheduler for operation: 89 at RepositoryViewModel.cs:319 after blocking 0.0109745s
+2017-02-22 23:53:59.2554|INFO|thread:52|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 90 at BranchSynchronizer.cs:141
+2017-02-22 23:53:59.2554|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 90 at BranchSynchronizer.cs:141 after waiting 3.55E-05s
+2017-02-22 23:53:59.2769|INFO|thread:16|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:53:59.2769|INFO|thread:16|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:53:59.2769|INFO|thread:16|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'fetch --prune --recurse-submodules=on-demand origin ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:00.9896|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 91 at GitClient.cs:600
+2017-02-22 23:54:00.9896|INFO|thread:48|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 91 at GitClient.cs:600 after waiting 4.3E-05s
+2017-02-22 23:54:00.9896|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 91 at GitClient.cs:600 after blocking 0.0034058s
+2017-02-22 23:54:01.0026|INFO|thread:40|BackgroundFetcher|Got a refresh period for C:\Users\ASUS\Desktop\Python\mypathon\.git of 300 seconds
+2017-02-22 23:54:01.0026|INFO|thread:40|BackgroundFetcher|Added a delay for C:\Users\ASUS\Desktop\Python\mypathon\.git of 11591 milliseconds
+2017-02-22 23:54:01.0026|INFO|thread: 1|NewPullRequestViewModel|No matching pull request found, clearing selection...
+2017-02-22 23:54:02.0633|INFO|thread:36|ConcurrentRepositoryConnection|Pruning merged local branches
+2017-02-22 23:54:02.0633|INFO|thread:36|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:02.0633|INFO|thread:36|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:02.0633|INFO|thread:36|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'branch --merged master ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:02.1184|INFO|thread:36|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:02.1184|INFO|thread:36|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:02.1184|INFO|thread:36|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'log -g --abbrev-commit --pretty=oneline HEAD -n 2500 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:02.2585|INFO|thread:48|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 92 at GitClient.cs:195
+2017-02-22 23:54:02.2585|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 92 at GitClient.cs:195 after waiting 3.82E-05s
+2017-02-22 23:54:02.2585|INFO|thread:48|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 93 at RepositoryModel.cs:596
+2017-02-22 23:54:02.2585|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 93 at RepositoryModel.cs:596 after waiting 3.31E-05s
+2017-02-22 23:54:02.2585|INFO|thread:48|AsyncReaderWriterLock|Released concurrent scheduler for operation: 90 at BranchSynchronizer.cs:141 after blocking 3.0043318s
+2017-02-22 23:54:02.2665|INFO|thread:40|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 94 at GitClient.cs:267
+2017-02-22 23:54:02.2665|INFO|thread:51|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 94 at GitClient.cs:267 after waiting 3.27E-05s
+2017-02-22 23:54:02.2665|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 93 at RepositoryModel.cs:596 after blocking 0.00696s
+2017-02-22 23:54:02.2665|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 92 at GitClient.cs:195 after blocking 0.0113819s
+2017-02-22 23:54:02.2665|INFO|thread:34|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:02.2665|INFO|thread:34|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:02.2665|INFO|thread:34|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:02.3981|INFO|thread:34|ConcurrentRepositoryConnection|Took 92ms to git status
+2017-02-22 23:54:02.3981|INFO|thread:34|ConcurrentRepositoryConnection|Took 92ms to git status and parse output
+2017-02-22 23:54:02.3981|INFO|thread:34|NewCommitViewModel|Took 131ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:54:02.3981|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 94 at GitClient.cs:267 after blocking 0.131717s
+2017-02-22 23:54:02.3981|INFO|thread: 1|NewCommitViewModel|Took 0ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:54:02.3981|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 95 at RepositoryViewModel.cs:319
+2017-02-22 23:54:02.3981|INFO|thread:51|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 95 at RepositoryViewModel.cs:319 after waiting 2.32E-05s
+2017-02-22 23:54:02.4111|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 95 at RepositoryViewModel.cs:319 after blocking 0.0122811s
+2017-02-22 23:54:08.1568|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 96 at GitClient.cs:381
+2017-02-22 23:54:08.1568|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 96 at GitClient.cs:381 after waiting 3.59E-05s
+2017-02-22 23:54:08.1568|INFO|thread:52|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:08.1568|INFO|thread:52|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:08.1568|INFO|thread:52|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 4b825dc642cb6eb9a060e54bf8d69288fbee4904 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:08.2990|INFO|thread:52|AsyncReaderWriterLock|Released concurrent scheduler for operation: 96 at GitClient.cs:381 after blocking 0.1422684s
+2017-02-22 23:54:08.3140|INFO|thread: 1|SelectedCommitViewModel|Took 157ms to load files for commit b12d8d2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:54:08.3140|INFO|thread:52|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 97 at GitClient.cs:474
+2017-02-22 23:54:08.3140|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 97 at GitClient.cs:474 after waiting 3.11E-05s
+2017-02-22 23:54:08.3140|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 97 at GitClient.cs:474 after blocking 0.006716s
+2017-02-22 23:54:09.3805|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 98 at GitClient.cs:381
+2017-02-22 23:54:09.3805|INFO|thread:52|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 98 at GitClient.cs:381 after waiting 3.86E-05s
+2017-02-22 23:54:09.3972|INFO|thread:54|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:09.3972|INFO|thread:54|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:09.3972|INFO|thread:54|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 4b825dc642cb6eb9a060e54bf8d69288fbee4904 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:09.5198|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 98 at GitClient.cs:381 after blocking 0.1394641s
+2017-02-22 23:54:09.5388|INFO|thread: 1|SelectedCommitViewModel|Took 158ms to load files for commit 56f65b2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:54:09.5388|INFO|thread:35|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 99 at GitClient.cs:474
+2017-02-22 23:54:09.5388|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 99 at GitClient.cs:474 after waiting 2.88E-05s
+2017-02-22 23:54:09.5478|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 99 at GitClient.cs:474 after blocking 0.0065301s
+2017-02-22 23:54:10.1662|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 100 at GitClient.cs:381
+2017-02-22 23:54:10.1662|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 100 at GitClient.cs:381 after waiting 3.98E-05s
+2017-02-22 23:54:10.1857|INFO|thread:53|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:10.1857|INFO|thread:53|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:10.1857|INFO|thread:53|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 4b825dc642cb6eb9a060e54bf8d69288fbee4904 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:10.3098|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 100 at GitClient.cs:381 after blocking 0.143485s
+2017-02-22 23:54:10.3298|INFO|thread: 1|SelectedCommitViewModel|Took 165ms to load files for commit b12d8d2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:54:10.3298|INFO|thread:35|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 101 at GitClient.cs:474
+2017-02-22 23:54:10.3298|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 101 at GitClient.cs:474 after waiting 2.72E-05s
+2017-02-22 23:54:10.3298|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 101 at GitClient.cs:474 after blocking 0.009619s
+2017-02-22 23:54:10.8496|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 102 at GitClient.cs:381
+2017-02-22 23:54:10.8496|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 102 at GitClient.cs:381 after waiting 3.11E-05s
+2017-02-22 23:54:10.8637|INFO|thread:40|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:10.8637|INFO|thread:40|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:10.8637|INFO|thread:40|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 4b825dc642cb6eb9a060e54bf8d69288fbee4904 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:10.9988|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 102 at GitClient.cs:381 after blocking 0.1489888s
+2017-02-22 23:54:11.0118|INFO|thread: 1|SelectedCommitViewModel|Took 168ms to load files for commit 56f65b2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:54:11.0118|INFO|thread:53|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 103 at GitClient.cs:474
+2017-02-22 23:54:11.0118|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 103 at GitClient.cs:474 after waiting 2.68E-05s
+2017-02-22 23:54:11.0238|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 103 at GitClient.cs:474 after blocking 0.0087624s
+2017-02-22 23:54:11.2447|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 104 at GitClient.cs:381
+2017-02-22 23:54:11.2447|INFO|thread:51|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 104 at GitClient.cs:381 after waiting 4.42E-05s
+2017-02-22 23:54:11.2607|INFO|thread:34|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:11.2607|INFO|thread:34|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:11.2607|INFO|thread:34|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 4b825dc642cb6eb9a060e54bf8d69288fbee4904 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:11.3943|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 104 at GitClient.cs:381 after blocking 0.1491866s
+2017-02-22 23:54:11.4183|INFO|thread: 1|SelectedCommitViewModel|Took 174ms to load files for commit b12d8d2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:54:11.4183|INFO|thread:34|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 105 at GitClient.cs:474
+2017-02-22 23:54:11.4183|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 105 at GitClient.cs:474 after waiting 3.43E-05s
+2017-02-22 23:54:11.4273|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 105 at GitClient.cs:474 after blocking 0.0064867s
+2017-02-22 23:54:14.5867|INFO|thread:40|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 106 at GitClient.cs:474
+2017-02-22 23:54:14.5867|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 106 at GitClient.cs:474 after waiting 3.43E-05s
+2017-02-22 23:54:14.5942|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 106 at GitClient.cs:474 after blocking 0.0072604s
+2017-02-22 23:54:15.6989|INFO|thread:53|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 107 at GitClient.cs:474
+2017-02-22 23:54:15.6989|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 107 at GitClient.cs:474 after waiting 2.8E-05s
+2017-02-22 23:54:15.7069|INFO|thread:52|AsyncReaderWriterLock|Released concurrent scheduler for operation: 107 at GitClient.cs:474 after blocking 0.0078347s
+2017-02-22 23:54:16.6827|INFO|thread:51|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 108 at GitClient.cs:474
+2017-02-22 23:54:16.6827|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 108 at GitClient.cs:474 after waiting 3.39E-05s
+2017-02-22 23:54:16.6902|INFO|thread:35|AsyncReaderWriterLock|Released concurrent scheduler for operation: 108 at GitClient.cs:474 after blocking 0.0072912s
+2017-02-22 23:54:17.3867|INFO|thread:51|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 109 at GitClient.cs:474
+2017-02-22 23:54:17.3867|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 109 at GitClient.cs:474 after waiting 3.43E-05s
+2017-02-22 23:54:17.3942|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 109 at GitClient.cs:474 after blocking 0.0073934s
+2017-02-22 23:54:17.8887|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 110 at GitClient.cs:474
+2017-02-22 23:54:17.8887|INFO|thread:52|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 110 at GitClient.cs:474 after waiting 5.36E-05s
+2017-02-22 23:54:17.8972|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 110 at GitClient.cs:474 after blocking 0.0083728s
+2017-02-22 23:54:20.4636|INFO|thread:14|DashboardViewModel|Selected repository 'feihu-jun/Tutorial'
+2017-02-22 23:54:20.4696|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 111 at GitClient.cs:195
+2017-02-22 23:54:20.4696|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 111 at GitClient.cs:195 after waiting 5.01E-05s
+2017-02-22 23:54:20.4696|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 112 at RepositoryModel.cs:596
+2017-02-22 23:54:20.4696|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 112 at RepositoryModel.cs:596 after waiting 1.89E-05s
+2017-02-22 23:54:20.4696|INFO|thread:52|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 113 at GitClient.cs:267
+2017-02-22 23:54:20.4696|INFO|thread:52|AsyncReaderWriterLock|Released concurrent scheduler for operation: 112 at RepositoryModel.cs:596 after blocking 0.008222s
+2017-02-22 23:54:20.4696|INFO|thread:52|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 113 at GitClient.cs:267 after waiting 0.0002984s
+2017-02-22 23:54:20.4696|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 111 at GitClient.cs:195 after blocking 0.0128696s
+2017-02-22 23:54:20.4896|INFO|thread:52|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:20.4896|INFO|thread:52|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:20.4896|INFO|thread:52|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo\
+2017-02-22 23:54:20.6072|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 114 at GitClient.cs:588
+2017-02-22 23:54:20.6072|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 114 at GitClient.cs:588 after waiting 3.43E-05s
+2017-02-22 23:54:20.6112|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 114 at GitClient.cs:588 after blocking 0.0045754s
+2017-02-22 23:54:20.6712|INFO|thread:34|ConcurrentRepositoryConnection|Took 129ms to git status
+2017-02-22 23:54:20.6712|INFO|thread:34|ConcurrentRepositoryConnection|Took 129ms to git status and parse output
+2017-02-22 23:54:20.6712|INFO|thread:34|NewCommitViewModel|Took 193ms to load files for C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2017-02-22 23:54:20.6712|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 113 at GitClient.cs:267 after blocking 0.1926908s
+2017-02-22 23:54:20.9334|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 115 at ICommittedFileForklift.cs:95
+2017-02-22 23:54:20.9334|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 115 at ICommittedFileForklift.cs:95 after waiting 0.0014277s
+2017-02-22 23:54:20.9484|INFO|thread:52|AsyncReaderWriterLock|Released concurrent scheduler for operation: 115 at ICommittedFileForklift.cs:95 after blocking 0.0130717s
+2017-02-22 23:54:20.9935|INFO|thread: 1|NewCommitViewModel|Took 321ms to render file list for C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2017-02-22 23:54:20.9935|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 116 at RepositoryViewModel.cs:319
+2017-02-22 23:54:20.9935|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 116 at RepositoryViewModel.cs:319 after waiting 3.19E-05s
+2017-02-22 23:54:21.0281|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 116 at RepositoryViewModel.cs:319 after blocking 0.0335639s
+2017-02-22 23:54:21.7721|INFO|thread:54|BackgroundFetcher|Got a refresh period for C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo\.git of 300 seconds
+2017-02-22 23:54:21.7721|INFO|thread:54|BackgroundFetcher|Added a delay for C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo\.git of 26725 milliseconds
+2017-02-22 23:54:23.8921|INFO|thread:14|DashboardViewModel|Selected repository 'feihu-jun/mypathon'
+2017-02-22 23:54:23.8921|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 117 at GitClient.cs:195
+2017-02-22 23:54:23.8921|INFO|thread:34|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 117 at GitClient.cs:195 after waiting 3.98E-05s
+2017-02-22 23:54:23.8921|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 118 at RepositoryModel.cs:596
+2017-02-22 23:54:23.8921|INFO|thread:52|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 118 at RepositoryModel.cs:596 after waiting 1.73E-05s
+2017-02-22 23:54:23.8921|INFO|thread:54|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 119 at GitClient.cs:267
+2017-02-22 23:54:23.8921|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 118 at RepositoryModel.cs:596 after blocking 0.0071009s
+2017-02-22 23:54:23.8921|INFO|thread:52|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 119 at GitClient.cs:267 after waiting 8.76E-05s
+2017-02-22 23:54:23.9113|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 117 at GitClient.cs:195 after blocking 0.0143874s
+2017-02-22 23:54:23.9113|INFO|thread:54|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:23.9113|INFO|thread:54|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:23.9113|INFO|thread:54|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:24.0289|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 120 at GitClient.cs:588
+2017-02-22 23:54:24.0289|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 120 at GitClient.cs:588 after waiting 4.26E-05s
+2017-02-22 23:54:24.0339|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 120 at GitClient.cs:588 after blocking 0.0045541s
+2017-02-22 23:54:24.0619|INFO|thread:48|ConcurrentRepositoryConnection|Took 105ms to git status
+2017-02-22 23:54:24.0619|INFO|thread:48|ConcurrentRepositoryConnection|Took 105ms to git status and parse output
+2017-02-22 23:54:24.0619|INFO|thread:48|NewCommitViewModel|Took 157ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:54:24.0619|INFO|thread:48|AsyncReaderWriterLock|Released concurrent scheduler for operation: 119 at GitClient.cs:267 after blocking 0.1577165s
+2017-02-22 23:54:24.2801|INFO|thread: 1|NewCommitViewModel|Took 218ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:54:24.2801|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 121 at RepositoryViewModel.cs:319
+2017-02-22 23:54:24.2801|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 121 at RepositoryViewModel.cs:319 after waiting 3.11E-05s
+2017-02-22 23:54:24.2976|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 121 at RepositoryViewModel.cs:319 after blocking 0.0164653s
+2017-02-22 23:54:48.0200|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 122 at GitClient.cs:195
+2017-02-22 23:54:48.0200|INFO|thread:16|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 122 at GitClient.cs:195 after waiting 0.0003647s
+2017-02-22 23:54:48.0200|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 123 at RepositoryModel.cs:596
+2017-02-22 23:54:48.0200|INFO|thread:52|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 123 at RepositoryModel.cs:596 after waiting 0.0002143s
+2017-02-22 23:54:48.0200|INFO|thread:52|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 124 at GitClient.cs:267
+2017-02-22 23:54:48.0200|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 124 at GitClient.cs:267 after waiting 5.64E-05s
+2017-02-22 23:54:48.0200|INFO|thread:52|AsyncReaderWriterLock|Released concurrent scheduler for operation: 123 at RepositoryModel.cs:596 after blocking 0.010635s
+2017-02-22 23:54:48.0345|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 122 at GitClient.cs:195 after blocking 0.0143096s
+2017-02-22 23:54:48.0345|INFO|thread:36|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:48.0345|INFO|thread:36|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:48.0345|INFO|thread:36|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:48.1694|INFO|thread:34|ConcurrentRepositoryConnection|Took 92ms to git status
+2017-02-22 23:54:48.1694|INFO|thread:34|ConcurrentRepositoryConnection|Took 93ms to git status and parse output
+2017-02-22 23:54:48.1694|INFO|thread:34|NewCommitViewModel|Took 138ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:54:48.1694|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 124 at GitClient.cs:267 after blocking 0.1380901s
+2017-02-22 23:54:48.1694|INFO|thread: 1|NewCommitViewModel|Took 0ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:54:48.1694|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 125 at RepositoryViewModel.cs:319
+2017-02-22 23:54:48.1694|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 125 at RepositoryViewModel.cs:319 after waiting 2.25E-05s
+2017-02-22 23:54:48.1814|INFO|thread:34|AsyncReaderWriterLock|Released concurrent scheduler for operation: 125 at RepositoryViewModel.cs:319 after blocking 0.0112098s
+2017-02-22 23:54:55.6139|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 126 at BranchSelectionViewModel.cs:191
+2017-02-22 23:54:55.6139|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 126 at BranchSelectionViewModel.cs:191 after waiting 4.46E-05s
+2017-02-22 23:54:55.6309|INFO|thread:36|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:55.6309|INFO|thread:36|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:55.6309|INFO|thread:36|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'log -g --abbrev-commit --pretty=oneline HEAD -n 2500 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:55.7566|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 126 at BranchSelectionViewModel.cs:191 after blocking 0.1423063s
+2017-02-22 23:54:57.9944|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 127 at BranchSelectionViewModel.cs:191
+2017-02-22 23:54:57.9944|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 127 at BranchSelectionViewModel.cs:191 after waiting 3.98E-05s
+2017-02-22 23:54:58.0064|INFO|thread:40|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:58.0064|INFO|thread:40|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:58.0064|INFO|thread:40|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'log -g --abbrev-commit --pretty=oneline HEAD -n 2500 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:54:58.1547|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 127 at BranchSelectionViewModel.cs:191 after blocking 0.1594683s
+2017-02-22 23:54:59.8851|INFO|thread:54|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 128 at BranchSelectionViewModel.cs:191
+2017-02-22 23:54:59.8851|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 128 at BranchSelectionViewModel.cs:191 after waiting 3.11E-05s
+2017-02-22 23:54:59.9011|INFO|thread:36|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:54:59.9011|INFO|thread:36|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:54:59.9011|INFO|thread:36|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'log -g --abbrev-commit --pretty=oneline HEAD -n 2500 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:55:00.0448|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 128 at BranchSelectionViewModel.cs:191 after blocking 0.1597028s
+2017-02-22 23:55:25.0689|INFO|thread: 1|RepositoryModel|Creating and initializing new local repository here 'C:\Users\ASUS\Desktop\Python'
+2017-02-22 23:55:25.2461|INFO|thread:54|AsyncReaderWriterLock|Acquiring exclusive scheduler for operation 129 at RepositoryModel.cs:1336
+2017-02-22 23:55:25.2461|INFO|thread:51|AsyncReaderWriterLock|Acquired exclusive scheduler for operation: 129 at RepositoryModel.cs:1336 after waiting 3.9E-05s
+2017-02-22 23:55:25.2631|INFO|thread:40|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:55:25.2631|INFO|thread:40|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:55:25.2631|INFO|thread:40|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'add --all "C:\Users\ASUS\Desktop\Python\.gitattributes" ', Working Directory: C:\Users\ASUS\Desktop\Python\
+2017-02-22 23:55:25.4497|INFO|thread:32|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:55:25.4497|INFO|thread:32|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:55:25.4497|INFO|thread:32|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'add --all "C:\Users\ASUS\Desktop\Python\.gitignore" ', Working Directory: C:\Users\ASUS\Desktop\Python\
+2017-02-22 23:55:25.6304|INFO|thread:54|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:55:25.6304|INFO|thread:54|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:55:25.6304|INFO|thread:54|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'commit -F "C:\Users\ASUS\AppData\Local\Temp\018a45db-7c51-4348-8340-bcf2bb555dae" ', Working Directory: C:\Users\ASUS\Desktop\Python\
+2017-02-22 23:55:25.9254|INFO|thread:29|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 130 at RepositoryModel.cs:596
+2017-02-22 23:55:25.9254|INFO|thread:51|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 130 at RepositoryModel.cs:596 after waiting 0.0012169s
+2017-02-22 23:55:25.9254|INFO|thread:32|AsyncReaderWriterLock|Released exclusive scheduler for operation: 129 at RepositoryModel.cs:1336 after blocking 0.6800337s
+2017-02-22 23:55:25.9254|INFO|thread:32|RepositoryModel|Created repository sucessfully: 'C:\Users\ASUS\Desktop\Python'
+2017-02-22 23:55:25.9254|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 130 at RepositoryModel.cs:596 after blocking 0.0059692s
+2017-02-22 23:55:25.9714|INFO|thread:14|DashboardViewModel|Selected repository ''
+2017-02-22 23:55:25.9714|INFO|thread:14|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 131 at GitClient.cs:605
+2017-02-22 23:55:25.9714|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 131 at GitClient.cs:605 after waiting 4.18E-05s
+2017-02-22 23:55:25.9714|INFO|thread:14|AsyncReaderWriterLock|Acquiring exclusive scheduler for operation 132 at GitClient.cs:583
+2017-02-22 23:55:25.9714|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 131 at GitClient.cs:605 after blocking 0.004586s
+2017-02-22 23:55:25.9714|INFO|thread:53|AsyncReaderWriterLock|Acquired exclusive scheduler for operation: 132 at GitClient.cs:583 after waiting 0.0044688s
+2017-02-22 23:55:25.9984|INFO|thread:53|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 133 at BranchesViewModel.cs:356
+2017-02-22 23:55:26.0985|INFO|thread:53|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 134 at NewPullRequestViewModel.cs:245
+2017-02-22 23:55:26.1415|INFO|thread:53|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 135 at GitClient.cs:600
+2017-02-22 23:55:26.1941|INFO|thread:53|DashboardViewModel|Took 222ms to Create RepositoryViewModel for location C:\Users\ASUS\Desktop\Python
+2017-02-22 23:55:26.1941|INFO|thread:53|AsyncReaderWriterLock|Released exclusive scheduler for operation: 132 at GitClient.cs:583 after blocking 0.2171785s
+2017-02-22 23:55:26.1941|INFO|thread:51|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 133 at BranchesViewModel.cs:356 after waiting 0.195754s
+2017-02-22 23:55:26.1941|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 134 at NewPullRequestViewModel.cs:245 after waiting 0.0957215s
+2017-02-22 23:55:26.2086|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 133 at BranchesViewModel.cs:356 after blocking 0.0140294s
+2017-02-22 23:55:26.2086|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 134 at NewPullRequestViewModel.cs:245 after blocking 0.0215634s
+2017-02-22 23:55:26.1941|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 135 at GitClient.cs:600 after waiting 0.0527865s
+2017-02-22 23:55:26.2806|INFO|thread:53|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 136 at RepositoryViewModel.cs:319
+2017-02-22 23:55:26.2806|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 135 at GitClient.cs:600 after blocking 0.0598357s
+2017-02-22 23:55:26.2806|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 136 at RepositoryViewModel.cs:319 after waiting 0.0001385s
+2017-02-22 23:55:26.3016|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 136 at RepositoryViewModel.cs:319 after blocking 0.0210703s
+2017-02-22 23:55:26.3432|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 137 at GitClient.cs:195
+2017-02-22 23:55:26.3432|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 138 at RepositoryModel.cs:596
+2017-02-22 23:55:26.3452|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 137 at GitClient.cs:195 after waiting 0.0019223s
+2017-02-22 23:55:26.3452|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 138 at RepositoryModel.cs:596 after waiting 0.0042904s
+2017-02-22 23:55:26.3452|INFO|thread:53|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 139 at RepositoryModel.cs:596
+2017-02-22 23:55:26.3452|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 139 at RepositoryModel.cs:596 after waiting 0.0031523s
+2017-02-22 23:55:26.3622|INFO|thread:53|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 140 at GitClient.cs:267
+2017-02-22 23:55:26.3622|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 139 at RepositoryModel.cs:596 after blocking 0.0079457s
+2017-02-22 23:55:26.3622|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 140 at GitClient.cs:267 after waiting 0.0001417s
+2017-02-22 23:55:26.3622|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 137 at GitClient.cs:195 after blocking 0.0172039s
+2017-02-22 23:55:26.3622|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 138 at RepositoryModel.cs:596 after blocking 0.0215069s
+2017-02-22 23:55:26.3622|INFO|thread:51|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:55:26.3622|INFO|thread:51|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:55:26.3862|INFO|thread:51|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\
+2017-02-22 23:55:26.5565|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 141 at GitClient.cs:588
+2017-02-22 23:55:26.9913|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 141 at GitClient.cs:588 after waiting 0.4348054s
+2017-02-22 23:55:26.9913|INFO|thread:51|ConcurrentRepositoryConnection|Took 537ms to git status
+2017-02-22 23:55:26.9913|INFO|thread:51|ConcurrentRepositoryConnection|Took 538ms to git status and parse output
+2017-02-22 23:55:26.9913|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 141 at GitClient.cs:588 after blocking 0.0048813s
+2017-02-22 23:55:27.2535|INFO|thread:51|NewCommitViewModel|Took 892ms to load files for C:\Users\ASUS\Desktop\Python
+2017-02-22 23:55:27.2535|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 140 at GitClient.cs:267 after blocking 0.8920952s
+2017-02-22 23:55:27.3085|INFO|thread: 1|NewCommitViewModel|Took 54ms to render file list for C:\Users\ASUS\Desktop\Python
+2017-02-22 23:55:27.3085|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 142 at RepositoryViewModel.cs:319
+2017-02-22 23:55:27.3085|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 142 at RepositoryViewModel.cs:319 after waiting 3.59E-05s
+2017-02-22 23:55:27.3085|INFO|thread: 1|AsyncReaderWriterLock|Released concurrent scheduler for operation: 142 at RepositoryViewModel.cs:319 after blocking 4.06E-05s
+2017-02-22 23:55:27.3085|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 143 at RepositoryViewModel.cs:319
+2017-02-22 23:55:27.3085|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 143 at RepositoryViewModel.cs:319 after waiting 2.4E-05s
+2017-02-22 23:55:27.3325|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 143 at RepositoryViewModel.cs:319 after blocking 0.0219139s
+2017-02-22 23:55:27.5102|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 144 at GitClient.cs:381
+2017-02-22 23:55:27.5102|INFO|thread:51|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 144 at GitClient.cs:381 after waiting 2.56E-05s
+2017-02-22 23:55:27.5222|INFO|thread:54|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:55:27.5222|INFO|thread:54|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:55:27.5222|INFO|thread:54|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 4b825dc642cb6eb9a060e54bf8d69288fbee4904 4e007610d905bd04d2779c5eed42baf4882da8d9 ', Working Directory: C:\Users\ASUS\Desktop\Python\
+2017-02-22 23:55:27.5532|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 145 at ICommittedFileForklift.cs:95
+2017-02-22 23:55:27.5532|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 145 at ICommittedFileForklift.cs:95 after waiting 2.05E-05s
+2017-02-22 23:55:27.5532|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 145 at ICommittedFileForklift.cs:95 after blocking 0.0063612s
+2017-02-22 23:55:27.6925|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 144 at GitClient.cs:381 after blocking 0.1820695s
+2017-02-22 23:55:27.7246|INFO|thread: 1|SelectedCommitViewModel|Took 214ms to load files for commit 6c35c45 in repo C:\Users\ASUS\Desktop\Python
+2017-02-22 23:55:33.4816|INFO|thread:40|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 146 at GitClient.cs:474
+2017-02-22 23:55:33.4816|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 146 at GitClient.cs:474 after waiting 2.92E-05s
+2017-02-22 23:55:33.4916|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 146 at GitClient.cs:474 after blocking 0.009469s
+2017-02-22 23:55:35.2104|INFO|thread:51|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 147 at GitClient.cs:474
+2017-02-22 23:55:35.2104|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 147 at GitClient.cs:474 after waiting 2.92E-05s
+2017-02-22 23:55:35.2194|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 147 at GitClient.cs:474 after blocking 0.0093411s
+2017-02-22 23:55:40.3633|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 148 at GitClient.cs:381
+2017-02-22 23:55:40.3633|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 148 at GitClient.cs:381 after waiting 4.93E-05s
+2017-02-22 23:55:40.3924|INFO|thread:35|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:55:40.3924|INFO|thread:35|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:55:40.3924|INFO|thread:35|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 4b825dc642cb6eb9a060e54bf8d69288fbee4904 4e007610d905bd04d2779c5eed42baf4882da8d9 ', Working Directory: C:\Users\ASUS\Desktop\Python\
+2017-02-22 23:55:40.5125|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 148 at GitClient.cs:381 after blocking 0.1492454s
+2017-02-22 23:55:58.4417|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 149 at GitClient.cs:195
+2017-02-22 23:55:58.4417|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 149 at GitClient.cs:195 after waiting 4.46E-05s
+2017-02-22 23:55:58.4417|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 150 at RepositoryModel.cs:596
+2017-02-22 23:55:58.4417|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 150 at RepositoryModel.cs:596 after waiting 2.96E-05s
+2017-02-22 23:55:58.4417|INFO|thread:53|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 151 at GitClient.cs:267
+2017-02-22 23:55:58.4417|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 151 at GitClient.cs:267 after waiting 4.1E-05s
+2017-02-22 23:55:58.4417|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 150 at RepositoryModel.cs:596 after blocking 0.0084734s
+2017-02-22 23:55:58.4567|INFO|thread:35|AsyncReaderWriterLock|Released concurrent scheduler for operation: 149 at GitClient.cs:195 after blocking 0.01497s
+2017-02-22 23:55:58.4567|INFO|thread:51|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:55:58.4567|INFO|thread:51|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:55:58.4567|INFO|thread:51|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\
+2017-02-22 23:55:58.5978|INFO|thread:32|ConcurrentRepositoryConnection|Took 101ms to git status
+2017-02-22 23:55:58.5978|INFO|thread:32|ConcurrentRepositoryConnection|Took 101ms to git status and parse output
+2017-02-22 23:55:58.6508|INFO|thread:32|NewCommitViewModel|Took 199ms to load files for C:\Users\ASUS\Desktop\Python
+2017-02-22 23:55:58.6508|INFO|thread:32|AsyncReaderWriterLock|Released concurrent scheduler for operation: 151 at GitClient.cs:267 after blocking 0.1996947s
+2017-02-22 23:55:58.6618|INFO|thread: 1|NewCommitViewModel|Took 11ms to render file list for C:\Users\ASUS\Desktop\Python
+2017-02-22 23:55:58.6618|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 152 at RepositoryViewModel.cs:319
+2017-02-22 23:55:58.6618|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 152 at RepositoryViewModel.cs:319 after waiting 3.15E-05s
+2017-02-22 23:55:58.6618|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 152 at RepositoryViewModel.cs:319 after blocking 0.0076539s
+2017-02-22 23:56:04.1246|INFO|thread:14|DashboardViewModel|Selected repository 'feihu-jun/mypathon'
+2017-02-22 23:56:04.1296|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 153 at GitClient.cs:195
+2017-02-22 23:56:04.1296|INFO|thread:51|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 153 at GitClient.cs:195 after waiting 4.5E-05s
+2017-02-22 23:56:04.1296|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 154 at RepositoryModel.cs:596
+2017-02-22 23:56:04.1296|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 154 at RepositoryModel.cs:596 after waiting 1.77E-05s
+2017-02-22 23:56:04.1296|INFO|thread:33|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 155 at GitClient.cs:267
+2017-02-22 23:56:04.1296|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 154 at RepositoryModel.cs:596 after blocking 0.0082338s
+2017-02-22 23:56:04.1296|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 155 at GitClient.cs:267 after waiting 9.23E-05s
+2017-02-22 23:56:04.1441|INFO|thread:20|AsyncReaderWriterLock|Released concurrent scheduler for operation: 153 at GitClient.cs:195 after blocking 0.0139279s
+2017-02-22 23:56:04.1441|INFO|thread:33|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:56:04.1441|INFO|thread:33|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:56:04.1441|INFO|thread:33|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:56:04.2838|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 156 at GitClient.cs:588
+2017-02-22 23:56:04.2838|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 156 at GitClient.cs:588 after waiting 3.78E-05s
+2017-02-22 23:56:04.3038|INFO|thread:40|ConcurrentRepositoryConnection|Took 112ms to git status
+2017-02-22 23:56:04.3038|INFO|thread:40|ConcurrentRepositoryConnection|Took 113ms to git status and parse output
+2017-02-22 23:56:04.3188|INFO|thread:20|AsyncReaderWriterLock|Released concurrent scheduler for operation: 156 at GitClient.cs:588 after blocking 0.0358099s
+2017-02-22 23:56:04.3188|INFO|thread:40|NewCommitViewModel|Took 181ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:56:04.3188|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 155 at GitClient.cs:267 after blocking 0.1811691s
+2017-02-22 23:56:04.5649|INFO|thread: 1|NewCommitViewModel|Took 244ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:56:04.5649|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 157 at RepositoryViewModel.cs:319
+2017-02-22 23:56:04.5649|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 157 at RepositoryViewModel.cs:319 after waiting 3.67E-05s
+2017-02-22 23:56:04.5649|INFO|thread:20|AsyncReaderWriterLock|Released concurrent scheduler for operation: 157 at RepositoryViewModel.cs:319 after blocking 0.0128681s
+2017-02-22 23:56:05.4825|INFO|thread:14|DashboardViewModel|Selected repository ''
+2017-02-22 23:56:05.4865|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 158 at GitClient.cs:195
+2017-02-22 23:56:05.4865|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 158 at GitClient.cs:195 after waiting 3.98E-05s
+2017-02-22 23:56:05.4865|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 159 at RepositoryModel.cs:596
+2017-02-22 23:56:05.4865|INFO|thread:20|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 159 at RepositoryModel.cs:596 after waiting 1.69E-05s
+2017-02-22 23:56:05.4865|INFO|thread:40|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 160 at GitClient.cs:267
+2017-02-22 23:56:05.4865|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 159 at RepositoryModel.cs:596 after blocking 0.00723s
+2017-02-22 23:56:05.4865|INFO|thread:20|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 160 at GitClient.cs:267 after waiting 8.52E-05s
+2017-02-22 23:56:05.5005|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 158 at GitClient.cs:195 after blocking 0.0136757s
+2017-02-22 23:56:05.5005|INFO|thread:40|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:56:05.5005|INFO|thread:40|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:56:05.5005|INFO|thread:40|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\
+2017-02-22 23:56:05.6476|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 161 at GitClient.cs:588
+2017-02-22 23:56:05.6476|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 161 at GitClient.cs:588 after waiting 0.0016148s
+2017-02-22 23:56:05.6476|INFO|thread:40|ConcurrentRepositoryConnection|Took 105ms to git status
+2017-02-22 23:56:05.6476|INFO|thread:40|ConcurrentRepositoryConnection|Took 105ms to git status and parse output
+2017-02-22 23:56:05.6476|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 161 at GitClient.cs:588 after blocking 0.0046891s
+2017-02-22 23:56:05.7236|INFO|thread:40|NewCommitViewModel|Took 229ms to load files for C:\Users\ASUS\Desktop\Python
+2017-02-22 23:56:05.7236|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 160 at GitClient.cs:267 after blocking 0.2293396s
+2017-02-22 23:56:06.1374|INFO|thread: 1|NewCommitViewModel|Took 413ms to render file list for C:\Users\ASUS\Desktop\Python
+2017-02-22 23:56:06.1374|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 162 at RepositoryViewModel.cs:319
+2017-02-22 23:56:06.1374|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 162 at RepositoryViewModel.cs:319 after waiting 4.73E-05s
+2017-02-22 23:56:06.1464|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 162 at RepositoryViewModel.cs:319 after blocking 0.0084446s
+2017-02-22 23:56:11.0113|INFO|thread:14|DashboardViewModel|Selected repository 'feihu-jun/mypathon'
+2017-02-22 23:56:11.0293|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 163 at GitClient.cs:195
+2017-02-22 23:56:11.0293|INFO|thread:20|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 163 at GitClient.cs:195 after waiting 4.18E-05s
+2017-02-22 23:56:11.0293|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 164 at RepositoryModel.cs:596
+2017-02-22 23:56:11.0293|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 164 at RepositoryModel.cs:596 after waiting 2.09E-05s
+2017-02-22 23:56:11.0383|INFO|thread:54|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 165 at GitClient.cs:267
+2017-02-22 23:56:11.0383|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 165 at GitClient.cs:267 after waiting 3.55E-05s
+2017-02-22 23:56:11.0383|INFO|thread:54|AsyncReaderWriterLock|Released concurrent scheduler for operation: 164 at RepositoryModel.cs:596 after blocking 0.0083633s
+2017-02-22 23:56:11.0383|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 163 at GitClient.cs:195 after blocking 0.0121429s
+2017-02-22 23:56:11.0483|INFO|thread:35|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:56:11.0483|INFO|thread:35|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:56:11.0483|INFO|thread:35|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:56:11.1804|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 166 at GitClient.cs:588
+2017-02-22 23:56:11.1804|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 166 at GitClient.cs:588 after waiting 3.59E-05s
+2017-02-22 23:56:11.1804|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 166 at GitClient.cs:588 after blocking 0.0033758s
+2017-02-22 23:56:11.2024|INFO|thread:20|ConcurrentRepositoryConnection|Took 112ms to git status
+2017-02-22 23:56:11.2024|INFO|thread:20|ConcurrentRepositoryConnection|Took 113ms to git status and parse output
+2017-02-22 23:56:11.2024|INFO|thread:20|NewCommitViewModel|Took 164ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:56:11.2024|INFO|thread:20|AsyncReaderWriterLock|Released concurrent scheduler for operation: 165 at GitClient.cs:267 after blocking 0.164643s
+2017-02-22 23:56:11.4356|INFO|thread: 1|NewCommitViewModel|Took 233ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:56:11.4356|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 167 at RepositoryViewModel.cs:319
+2017-02-22 23:56:11.4356|INFO|thread:33|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 167 at RepositoryViewModel.cs:319 after waiting 4.81E-05s
+2017-02-22 23:56:11.4486|INFO|thread:20|AsyncReaderWriterLock|Released concurrent scheduler for operation: 167 at RepositoryViewModel.cs:319 after blocking 0.0120786s
+2017-02-22 23:56:12.0989|INFO|thread:14|DashboardViewModel|Selected repository ''
+2017-02-22 23:56:12.0989|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 168 at GitClient.cs:195
+2017-02-22 23:56:12.0989|INFO|thread:32|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 168 at GitClient.cs:195 after waiting 4.14E-05s
+2017-02-22 23:56:12.0989|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 169 at RepositoryModel.cs:596
+2017-02-22 23:56:12.0989|INFO|thread:54|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 169 at RepositoryModel.cs:596 after waiting 2.36E-05s
+2017-02-22 23:56:12.1099|INFO|thread:33|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 170 at GitClient.cs:267
+2017-02-22 23:56:12.1099|INFO|thread:35|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 170 at GitClient.cs:267 after waiting 3.35E-05s
+2017-02-22 23:56:12.1099|INFO|thread:33|AsyncReaderWriterLock|Released concurrent scheduler for operation: 169 at RepositoryModel.cs:596 after blocking 0.0070243s
+2017-02-22 23:56:12.1099|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 168 at GitClient.cs:195 after blocking 0.0129245s
+2017-02-22 23:56:12.1099|INFO|thread:20|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:56:12.1099|INFO|thread:20|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:56:12.1099|INFO|thread:20|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\
+2017-02-22 23:56:12.2822|INFO|thread:40|ConcurrentRepositoryConnection|Took 122ms to git status
+2017-02-22 23:56:12.2822|INFO|thread:40|ConcurrentRepositoryConnection|Took 123ms to git status and parse output
+2017-02-22 23:56:12.3213|INFO|thread:40|NewCommitViewModel|Took 211ms to load files for C:\Users\ASUS\Desktop\Python
+2017-02-22 23:56:12.3213|INFO|thread:40|AsyncReaderWriterLock|Released concurrent scheduler for operation: 170 at GitClient.cs:267 after blocking 0.2110908s
+2017-02-22 23:56:12.3323|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 171 at GitClient.cs:588
+2017-02-22 23:56:12.3323|INFO|thread:32|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 171 at GitClient.cs:588 after waiting 2.68E-05s
+2017-02-22 23:56:12.3323|INFO|thread:35|AsyncReaderWriterLock|Released concurrent scheduler for operation: 171 at GitClient.cs:588 after blocking 0.0030489s
+2017-02-22 23:56:12.8093|INFO|thread: 1|NewCommitViewModel|Took 488ms to render file list for C:\Users\ASUS\Desktop\Python
+2017-02-22 23:56:12.8093|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 172 at RepositoryViewModel.cs:319
+2017-02-22 23:56:12.8093|INFO|thread: 9|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 172 at RepositoryViewModel.cs:319 after waiting 3.94E-05s
+2017-02-22 23:56:12.8183|INFO|thread:20|AsyncReaderWriterLock|Released concurrent scheduler for operation: 172 at RepositoryViewModel.cs:319 after blocking 0.0090166s
+2017-02-22 23:56:20.1831|INFO|thread:14|DashboardViewModel|Selected repository 'feihu-jun/Tutorial'
+2017-02-22 23:56:20.1891|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 173 at GitClient.cs:195
+2017-02-22 23:56:20.1891|INFO|thread: 9|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 173 at GitClient.cs:195 after waiting 3.78E-05s
+2017-02-22 23:56:20.1891|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 174 at RepositoryModel.cs:596
+2017-02-22 23:56:20.1891|INFO|thread:20|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 174 at RepositoryModel.cs:596 after waiting 2.05E-05s
+2017-02-22 23:56:20.1891|INFO|thread:32|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 175 at GitClient.cs:267
+2017-02-22 23:56:20.1891|INFO|thread:51|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 175 at GitClient.cs:267 after waiting 3.27E-05s
+2017-02-22 23:56:20.1891|INFO|thread:32|AsyncReaderWriterLock|Released concurrent scheduler for operation: 174 at RepositoryModel.cs:596 after blocking 0.0062337s
+2017-02-22 23:56:20.1891|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 173 at GitClient.cs:195 after blocking 0.0133887s
+2017-02-22 23:56:20.2041|INFO|thread:35|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:56:20.2041|INFO|thread:35|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:56:20.2041|INFO|thread:35|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo\
+2017-02-22 23:56:20.3562|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 176 at GitClient.cs:588
+2017-02-22 23:56:20.3657|INFO|thread:19|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 176 at GitClient.cs:588 after waiting 0.009238s
+2017-02-22 23:56:20.3657|INFO|thread:36|ConcurrentRepositoryConnection|Took 120ms to git status
+2017-02-22 23:56:20.3657|INFO|thread:36|ConcurrentRepositoryConnection|Took 121ms to git status and parse output
+2017-02-22 23:56:20.3657|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 176 at GitClient.cs:588 after blocking 0.0056143s
+2017-02-22 23:56:20.3657|INFO|thread:36|NewCommitViewModel|Took 176ms to load files for C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2017-02-22 23:56:20.3657|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 175 at GitClient.cs:267 after blocking 0.1760944s
+2017-02-22 23:56:20.6390|INFO|thread: 1|NewCommitViewModel|Took 267ms to render file list for C:\Users\ASUS\AppData\Local\GitHub\TutorialRepository_d0aa732a2b4666b3029e2320f1a06cd39e99c9fc\new-repo
+2017-02-22 23:56:20.6390|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 177 at RepositoryViewModel.cs:319
+2017-02-22 23:56:20.6390|INFO|thread:51|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 177 at RepositoryViewModel.cs:319 after waiting 3.39E-05s
+2017-02-22 23:56:20.6510|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 177 at RepositoryViewModel.cs:319 after blocking 0.0106477s
+2017-02-22 23:56:21.0678|INFO|thread:14|DashboardViewModel|Selected repository 'feihu-jun/mypathon'
+2017-02-22 23:56:21.0678|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 178 at GitClient.cs:195
+2017-02-22 23:56:21.0678|INFO|thread:51|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 178 at GitClient.cs:195 after waiting 3.94E-05s
+2017-02-22 23:56:21.0678|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 179 at RepositoryModel.cs:596
+2017-02-22 23:56:21.0678|INFO|thread:19|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 179 at RepositoryModel.cs:596 after waiting 1.77E-05s
+2017-02-22 23:56:21.0799|INFO|thread:36|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 180 at GitClient.cs:267
+2017-02-22 23:56:21.0799|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 179 at RepositoryModel.cs:596 after blocking 0.0065353s
+2017-02-22 23:56:21.0799|INFO|thread:19|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 180 at GitClient.cs:267 after waiting 6.9E-05s
+2017-02-22 23:56:21.0799|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 178 at GitClient.cs:195 after blocking 0.0136974s
+2017-02-22 23:56:21.0979|INFO|thread:36|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:56:21.0979|INFO|thread:36|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:56:21.0979|INFO|thread:36|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:56:21.2315|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 181 at GitClient.cs:588
+2017-02-22 23:56:21.2485|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 181 at GitClient.cs:588 after waiting 0.0167037s
+2017-02-22 23:56:21.2485|INFO|thread:36|ConcurrentRepositoryConnection|Took 107ms to git status
+2017-02-22 23:56:21.2485|INFO|thread:36|ConcurrentRepositoryConnection|Took 107ms to git status and parse output
+2017-02-22 23:56:21.2525|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 181 at GitClient.cs:588 after blocking 0.0043066s
+2017-02-22 23:56:21.2525|INFO|thread:36|NewCommitViewModel|Took 172ms to load files for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:56:21.2525|INFO|thread:36|AsyncReaderWriterLock|Released concurrent scheduler for operation: 180 at GitClient.cs:267 after blocking 0.17285s
+2017-02-22 23:56:21.4696|INFO|thread: 1|NewCommitViewModel|Took 217ms to render file list for C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:56:21.4696|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 182 at RepositoryViewModel.cs:319
+2017-02-22 23:56:21.4696|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 182 at RepositoryViewModel.cs:319 after waiting 3.23E-05s
+2017-02-22 23:56:21.4696|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 182 at RepositoryViewModel.cs:319 after blocking 0.01107s
+2017-02-22 23:56:23.8593|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 183 at GitClient.cs:381
+2017-02-22 23:56:23.8593|INFO|thread:19|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 183 at GitClient.cs:381 after waiting 3.78E-05s
+2017-02-22 23:56:23.8909|INFO|thread:53|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:56:23.8909|INFO|thread:53|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:56:23.8909|INFO|thread:53|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'diff-tree -r -z --no-renames --name-status 9ef0a2c093d05e82632aa3588b0d31cdcfe77040 4b825dc642cb6eb9a060e54bf8d69288fbee4904 ', Working Directory: C:\Users\ASUS\Desktop\Python\mypathon\
+2017-02-22 23:56:24.0165|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 183 at GitClient.cs:381 after blocking 0.157587s
+2017-02-22 23:56:24.0365|INFO|thread: 1|SelectedCommitViewModel|Took 177ms to load files for commit 56f65b2 in repo C:\Users\ASUS\Desktop\Python\mypathon
+2017-02-22 23:56:24.0365|INFO|thread:51|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 184 at GitClient.cs:474
+2017-02-22 23:56:24.0365|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 184 at GitClient.cs:474 after waiting 2.6E-05s
+2017-02-22 23:56:24.0365|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 184 at GitClient.cs:474 after blocking 0.0066458s
+2017-02-22 23:56:25.2026|INFO|thread:14|DashboardViewModel|Selected repository ''
+2017-02-22 23:56:25.2071|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 185 at GitClient.cs:195
+2017-02-22 23:56:25.2071|INFO|thread:36|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 185 at GitClient.cs:195 after waiting 4.46E-05s
+2017-02-22 23:56:25.2071|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 186 at RepositoryModel.cs:596
+2017-02-22 23:56:25.2071|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 186 at RepositoryModel.cs:596 after waiting 2.09E-05s
+2017-02-22 23:56:25.2071|INFO|thread:51|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 187 at GitClient.cs:267
+2017-02-22 23:56:25.2071|INFO|thread:40|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 187 at GitClient.cs:267 after waiting 3.94E-05s
+2017-02-22 23:56:25.2071|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 186 at RepositoryModel.cs:596 after blocking 0.0070638s
+2017-02-22 23:56:25.2071|INFO|thread:19|AsyncReaderWriterLock|Released concurrent scheduler for operation: 185 at GitClient.cs:195 after blocking 0.0111873s
+2017-02-22 23:56:25.2261|INFO|thread:33|GitEnvironment|Process set up with this SSH Agent info: 15248:/tmp/ssh-hKP9gehnhFHi/agent.13160
+2017-02-22 23:56:25.2261|INFO|thread:33|GitEnvironment|PATH is C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\ASUS\AppData\Local\Apps\2.0\LZ89ZCPD.LE9\T1N25E3O.8W9\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\ASUS\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\WINDOWS\System32;C:\Windows\Microsoft.NET\Framework\v4.0.30319\
+2017-02-22 23:56:25.2261|INFO|thread:33|ProcessWrapper|Starting: Process - FileName: 'C:\Users\ASUS\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd\git.exe', Args: 'status --untracked-files=all --porcelain -z ', Working Directory: C:\Users\ASUS\Desktop\Python\
+2017-02-22 23:56:25.3622|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 188 at GitClient.cs:588
+2017-02-22 23:56:25.3622|INFO|thread:19|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 188 at GitClient.cs:588 after waiting 3.67E-05s
+2017-02-22 23:56:25.3622|INFO|thread:20|AsyncReaderWriterLock|Released concurrent scheduler for operation: 188 at GitClient.cs:588 after blocking 0.0039375s
+2017-02-22 23:56:25.3772|INFO|thread:53|ConcurrentRepositoryConnection|Took 109ms to git status
+2017-02-22 23:56:25.3772|INFO|thread:53|ConcurrentRepositoryConnection|Took 109ms to git status and parse output
+2017-02-22 23:56:25.4523|INFO|thread:53|NewCommitViewModel|Took 237ms to load files for C:\Users\ASUS\Desktop\Python
+2017-02-22 23:56:25.4523|INFO|thread:53|AsyncReaderWriterLock|Released concurrent scheduler for operation: 187 at GitClient.cs:267 after blocking 0.2377791s
+2017-02-22 23:56:25.8646|INFO|thread: 1|NewCommitViewModel|Took 412ms to render file list for C:\Users\ASUS\Desktop\Python
+2017-02-22 23:56:25.8646|INFO|thread: 1|AsyncReaderWriterLock|Acquiring concurrent scheduler for operation 189 at RepositoryViewModel.cs:319
+2017-02-22 23:56:25.8646|INFO|thread:53|AsyncReaderWriterLock|Acquired concurrent scheduler for operation: 189 at RepositoryViewModel.cs:319 after waiting 3.47E-05s
+2017-02-22 23:56:25.8766|INFO|thread:51|AsyncReaderWriterLock|Released concurrent scheduler for operation: 189 at RepositoryViewModel.cs:319 after blocking 0.0106113s
